@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookTrainTickets.Methods
 {
-    public class PopulateDBMethods
+    public class CreateRoute1
     {
         private static List<Train> CreateTrains()
         {

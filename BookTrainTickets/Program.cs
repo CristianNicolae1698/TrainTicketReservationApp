@@ -10,7 +10,8 @@ namespace BookTrainTickets
 
         {
 
-            PopulateDBMethods.CreateRoute();
+            CreateRoute1.CreateRoute();
+            CreateRoute2.CreateRoute();
 
             Console.WriteLine("Done processing");
             Console.ReadLine();

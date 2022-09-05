@@ -2206,11 +2206,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crist\\Documents\\Visual Studio 2022\\repos\\BookTrainTicketsApp\\BookTrainTickets\\BookTrainTickets.csproj",
+      "projectUniqueName": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTickets.csproj",
       "projectName": "BookTrainTickets",
-      "projectPath": "C:\\Users\\crist\\Documents\\Visual Studio 2022\\repos\\BookTrainTicketsApp\\BookTrainTickets\\BookTrainTickets.csproj",
+      "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTickets.csproj",
       "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\crist\\Documents\\Visual Studio 2022\\repos\\BookTrainTicketsApp\\BookTrainTickets\\obj\\",
+      "outputPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

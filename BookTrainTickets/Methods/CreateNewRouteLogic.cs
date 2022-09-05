@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookTrainTickets.Methods
 {
-    internal class CreateNewRouteLogic
+    public class CreateNewRouteLogic
     {
     }
 }
