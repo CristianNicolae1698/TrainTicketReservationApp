@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BookTrainTickets.Methods
 {
-    public class CreateRoute1
+    public class CreateRoute3
     {
         private static List<Train> CreateTrains()
         {
@@ -16,20 +16,20 @@ namespace BookTrainTickets.Methods
             var t1 = new Train
             {
 
-                TrainNumber = "727",
-                TrainType = "InterRegio"
+                TrainNumber = "363",
+                TrainType = "InterContinental"
             };
             var t2 = new Train
             {
 
-                TrainNumber = "828",
-                TrainType = "InterCity"
+                TrainNumber = "464",
+                TrainType = "ModernRail"
             };
             var t3 = new Train
             {
 
-                TrainNumber = "929",
-                TrainType = "InterEuropean"
+                TrainNumber = "565",
+                TrainType = "HighSpeedLev"
             };
 
             trains.Add(t1);
@@ -44,11 +44,11 @@ namespace BookTrainTickets.Methods
             var stations = new List<Station>();
             var st1 = new Station
             {
-                StationName = "Craiova"
+                StationName = "Bucuresti"
             };
             var st2 = new Station
             {
-                StationName = "Bucharest"
+                StationName = "Brasov"
             };
 
             stations.Add(st1);
@@ -61,20 +61,22 @@ namespace BookTrainTickets.Methods
         public static void CreateRoute()
         {
 
-            
 
-            var route1 = new Route
+
+            var route3 = new Route
             {
-                RouteName =$"{CreateStations()[0].StationName} - {CreateStations()[1].StationName}"
+                RouteName = $"{CreateStations()[0].StationName} - {CreateStations()[1].StationName}"
+
+
 
             };
 
 
-            route1.Trains.AddRange(CreateTrains());
-            route1.Stations.AddRange(CreateStations());
+            route3.Trains.AddRange(CreateTrains());
+            route3.Stations.AddRange(CreateStations());
             using (var db = new BookingContext())
             {
-                db.Routes.Add(route1);
+                db.Routes.Add(route3);
 
                 db.SaveChanges();
             }
