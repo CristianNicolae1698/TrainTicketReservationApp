@@ -10,5 +10,7 @@ namespace BookTrainTickets.Models
     {
         public Guid Id { get; set; }
         public string StationName { get; set; }
+
+        public List<Route> Routes { get; set;}
     }
 }

@@ -44,7 +44,7 @@ namespace BookTrainTickets.Methods
             var stations = new List<Station>();
             var st1 = new Station
             {
-                StationName = "Bucuresti"
+                StationName = "Bucharest"
             };
             var st2 = new Station
             {
