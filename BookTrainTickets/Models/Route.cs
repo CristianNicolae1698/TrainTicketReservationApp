@@ -13,6 +13,8 @@ namespace BookTrainTickets.Models
 
         public List<Station> Stations { get; set; }=new List<Station>();
         public List<Train> Trains { get; set; } =new List<Train>();
+
+        
         public int StationOrder { get; set; }
 
 
