@@ -30,8 +30,7 @@ namespace BookTrainTickets.Methods
         public static void AddStationToDb(string stationName)
         {
 
-            
-
+          
             using (var db = new BookingContext())
             {
                 db.Stations.Add(new Station { StationName=stationName });
@@ -66,8 +65,6 @@ namespace BookTrainTickets.Methods
 
                 db.SaveChanges();
 
-
-                
 
             }
 
