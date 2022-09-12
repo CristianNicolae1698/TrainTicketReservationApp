@@ -9,15 +9,31 @@ namespace BookTrainTickets
         public static void Main(string[] args)
 
         {
-
-            //CreateRoute1.CreateRoute();
-            //CreateRoute2.CreateRoute();
-            //CreateRoute3.CreateRoute();
-            TestNewRoute.CreateStations();
-            TestNewRoute.AddStationToList();
-            TestNewRoute.CreateRoute4();
-             TestNewRoute.CreateRoute5();
             
+            //PopulatingSampleDb.AddTrainToDb("EuroMaster", "525");
+            //PopulatingSampleDb.AddTrainToDb("MagLev", "212");
+            //PopulatingSampleDb.AddTrainToDb("HighRail", "515");
+            //PopulatingSampleDb.AddTrainToDb("CommonRail", "616");
+            //PopulatingSampleDb.AddTrainToDb("Rapide", "717");
+            //PopulatingSampleDb.AddTrainToDb("InterCity", "818");
+
+            PopulatingSampleDb.AddTrainToDb("PanEuropean", "919");
+            PopulatingSampleDb.AddTrainToDb("Softronic", "232");
+            PopulatingSampleDb.AddTrainToDb("NavigationExp", "656");
+
+            PopulatingSampleDb.AddStationToDb("Craiova");
+            PopulatingSampleDb.AddStationToDb("Bucuresti");
+            PopulatingSampleDb.AddRouteToDb("Craiova", "Bucuresti", "656");
+
+
+            PopulatingSampleDb.AddStationToDb("Constanta");
+            PopulatingSampleDb.AddStationToDb("Brasov");
+            PopulatingSampleDb.AddRouteToDb("Constanta", "Brasov", "232");
+
+            PopulatingSampleDb.AddStationToDb("Constanta");
+            PopulatingSampleDb.AddRouteToDb("Bucuresti", "Constanta", "919");
+
+
             Console.WriteLine("Done processing");
             Console.ReadLine();
         }
