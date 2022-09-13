@@ -51,10 +51,10 @@ namespace BookTrainTickets.Methods
                 {
                     RouteName = $"{arrivalStation} - {departureStation} - { trainNumber }"
                 };
-                Station station1 = db.Stations.First(s => s.StationName == arrivalStation);
-                route.Stations.Add(station1);
-                Station station2 = db.Stations.First(s => s.StationName == departureStation);
-                route.Stations.Add(station2);
+                Station stationArrival = db.Stations.First(s => s.StationName == arrivalStation);
+                route.Stations.Add(stationArrival);
+                Station stationDeparture= db.Stations.First(s => s.StationName == departureStation);
+                route.Stations.Add(stationDeparture);
                 Train train1=db.Trains.First(t => t.TrainType == trainNumber);
                 route.Trains.Add(train1);
                 
@@ -74,6 +74,7 @@ namespace BookTrainTickets.Methods
 
         public static void MergeRoute()
         {
+
 
         }
 
