@@ -1,5 +1,5 @@
 ﻿using BookTrainTickets.Core.IRepositories;
-using BookTrainTickets.DataAccess;
+using BookTrainTickets.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

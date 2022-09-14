@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using BookTrainTickets.Models;
 
-namespace BookTrainTickets.DataAccess
+namespace BookTrainTickets.Data
 {
     public class BookingContext : DbContext
     {

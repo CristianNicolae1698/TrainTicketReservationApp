@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BookTrainTickets.Core.IRepositories;
 namespace BookTrainTickets.Core.IConfiguration
 {
-    public interface IUnitOfWorkl
+    public interface IUnitOfWork
     {
         IRouteRepository Routes { get; set; }
 

@@ -1,4 +1,4 @@
-﻿using BookTrainTickets.DataAccess;
+﻿using BookTrainTickets.Data;
 using BookTrainTickets.Models;
 using BookTrainTickets.Methods;
 using System;

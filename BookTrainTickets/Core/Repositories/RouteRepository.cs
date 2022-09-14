@@ -1,5 +1,5 @@
 ﻿using BookTrainTickets.Core.IRepositories;
-using BookTrainTickets.DataAccess;
+using BookTrainTickets.Data;
 using BookTrainTickets.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -52,7 +52,7 @@ namespace BookTrainTickets.Core.Repositories
 
             catch (Exception ex)
             {
-                _logger.LogError(ex, "{Repo} All method error", typeof(RouteRepository));
+                _logger.LogError(ex, "{Repo} Upsert method error", typeof(RouteRepository));
                 return false;
             }
 
@@ -72,7 +72,7 @@ namespace BookTrainTickets.Core.Repositories
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "{Repo} All method error", typeof(RouteRepository));
+                _logger.LogError(ex, "{Repo} Delete method error", typeof(RouteRepository));
                 return false;
             }
         }
