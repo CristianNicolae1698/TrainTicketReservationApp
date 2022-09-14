@@ -55,8 +55,8 @@ namespace BookTrainTickets.Methods
                 route.Stations.Add(stationArrival);
                 Station stationDeparture= db.Stations.First(s => s.StationName == departureStation);
                 route.Stations.Add(stationDeparture);
-                Train train1=db.Trains.First(t => t.TrainType == trainNumber);
-                route.Trains.Add(train1);
+                Train train=db.Trains.First(t => t.TrainType == trainNumber);
+                route.Trains.Add(train);
                 
 
                 
