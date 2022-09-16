@@ -1,11 +1,4 @@
-﻿using BookTrainTickets.Data;
-using BookTrainTickets.Models;
-using BookTrainTickets.Methods;
-using System;
-using BookTrainTickets.Core.IConfiguration;
-using FluentAssertions.Common;
-
-namespace BookTrainTickets
+﻿namespace BookTrainTickets
 {
     public class Program
     {

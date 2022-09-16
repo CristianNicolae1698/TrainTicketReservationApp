@@ -807,7 +807,7 @@
           }
         }
       },
-      "BookTrainTickets/1.0.0": {
+      "BookTrainTicketsConsoleApp/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -816,10 +816,10 @@
           "Microsoft.Extensions.Configuration.Json": "6.0.0"
         },
         "compile": {
-          "bin/placeholder/BookTrainTickets.dll": {}
+          "bin/placeholder/BookTrainTicketsConsoleApp.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BookTrainTickets.dll": {}
+          "bin/placeholder/BookTrainTicketsConsoleApp.dll": {}
         }
       }
     }
@@ -2351,15 +2351,15 @@
         "version.txt"
       ]
     },
-    "BookTrainTickets/1.0.0": {
+    "BookTrainTicketsConsoleApp/1.0.0": {
       "type": "project",
-      "path": "../BookTrainTickets/BookTrainTickets.csproj",
-      "msbuildProject": "../BookTrainTickets/BookTrainTickets.csproj"
+      "path": "../BookTrainTickets/BookTrainTicketsConsoleApp.csproj",
+      "msbuildProject": "../BookTrainTickets/BookTrainTicketsConsoleApp.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BookTrainTickets >= 1.0.0",
+      "BookTrainTicketsConsoleApp >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -2395,8 +2395,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTickets.csproj": {
-              "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTickets.csproj"
+            "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTicketsConsoleApp.csproj": {
+              "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTicketsConsoleApp.csproj"
             }
           }
         }

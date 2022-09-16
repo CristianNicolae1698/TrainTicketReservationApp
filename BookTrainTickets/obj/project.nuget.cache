@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6fUgKJYorgnYMQZOnq7o9InXSHbZ8Q5TzHt0w1Z1NXC+7tr4gSSMSQvohAnFXry2ZBDuRSU4fVO66xST/vlU+g==",
+  "dgSpecHash": "k0Uio60mf7eW7qdgGxuMWlKFe2fwrs1OfL5PFpDY7vHHG3xzcl6hJpWK7JE/z2dKen/ewi0Z4EnlM6Y53M4jvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTickets.csproj",
+  "projectFilePath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTicketsConsoleApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crist\\.nuget\\packages\\fluentassertions\\6.7.0\\fluentassertions.6.7.0.nupkg.sha512",
     "C:\\Users\\crist\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

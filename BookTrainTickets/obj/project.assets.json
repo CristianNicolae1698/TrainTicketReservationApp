@@ -2249,9 +2249,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTickets.csproj",
-      "projectName": "BookTrainTickets",
-      "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTickets.csproj",
+      "projectUniqueName": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTicketsConsoleApp.csproj",
+      "projectName": "BookTrainTicketsConsoleApp",
+      "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTicketsConsoleApp.csproj",
       "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\obj\\",
       "projectStyle": "PackageReference",

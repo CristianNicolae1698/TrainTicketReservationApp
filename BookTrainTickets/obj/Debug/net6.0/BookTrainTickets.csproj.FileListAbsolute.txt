@@ -128,3 +128,4 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\ref\BookTrainTickets.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.pdb
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.genruntimeconfig.cache
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\FluentAssertions.dll
