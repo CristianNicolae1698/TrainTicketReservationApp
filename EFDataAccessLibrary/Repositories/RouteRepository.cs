@@ -1,15 +1,9 @@
-﻿using BookTrainTickets.Core.IRepositories;
-using BookTrainTickets.Data;
-using BookTrainTickets.Models;
+﻿using DomainLibrary.Interfaces;
+using DomainLibrary.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace BookTrainTickets.Core.Repositories
+namespace EFDataAccessLibrary.Repositories
 {
     public class RouteRepository : GenericRepository<Route>,IRouteRepository
     {

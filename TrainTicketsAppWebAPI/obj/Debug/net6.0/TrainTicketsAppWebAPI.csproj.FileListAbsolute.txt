@@ -6,7 +6,6 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsAppWebAPI.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\ref\TrainTicketsAppWebAPI.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsAppWebAPI.pdb
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\FluentAssertions.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -48,7 +47,6 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\TrainTicketsAppWebAPI.AssemblyInfoInputs.cache
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\TrainTicketsAppWebAPI.AssemblyInfo.cs
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\TrainTicketsAppWebAPI.csproj.CoreCompileInputs.cache
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\TrainTicketsAppWebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\TrainTicketsAppWebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\staticwebassets.development.json
@@ -58,8 +56,9 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\ref\TrainTicketsAppWebAPI.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\TrainTicketsAppWebAPI.pdb
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\TrainTicketsAppWebAPI.genruntimeconfig.cache
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\BookTrainTicketsConsoleApp.deps.json
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\BookTrainTicketsConsoleApp.runtimeconfig.json
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\BookTrainTicketsConsoleApp.exe
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\BookTrainTicketsConsoleApp.dll
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\BookTrainTicketsConsoleApp.pdb
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Humanizer.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\DomainLibrary.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\EFDataAccessLibrary.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\DomainLibrary.pdb
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\EFDataAccessLibrary.pdb

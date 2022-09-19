@@ -1,7 +1,5 @@
-﻿using BookTrainTickets.Core.IConfiguration;
-using Microsoft.AspNetCore.Mvc;
-using BookTrainTickets.Models;
-
+﻿using Microsoft.AspNetCore.Mvc;
+using DomainLibrary.Interfaces;
 
 namespace TrainTicketsAppWebAPI.Controllers
 {
@@ -25,7 +23,7 @@ namespace TrainTicketsAppWebAPI.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> CreateRoute (BookTrainTickets.Models.Route route)
+        public async Task<IActionResult> CreateRoute (DomainLibrary.Entities.Route route)
         {
             if (ModelState.IsValid)
             {

@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BookTrainTickets.Core.IConfiguration;
-using BookTrainTickets.Core.IRepositories;
-using BookTrainTickets.Core.Repositories;
+using DomainLibrary.Interfaces;
+using EFDataAccessLibrary.Repositories;
 using Microsoft.Extensions.Logging;
 
-namespace BookTrainTickets.Data
+namespace EFDataAccessLibrary.UnitOfWorks
 {
     public class UnitOfWork :IUnitOfWork, IDisposable
     {

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BookTrainTickets.Core.IRepositories;
-namespace BookTrainTickets.Core.IConfiguration
+
+namespace DomainLibrary.Interfaces
 {
     public interface IUnitOfWork
     {

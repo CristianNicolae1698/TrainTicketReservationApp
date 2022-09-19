@@ -1,10 +1,8 @@
-using BookTrainTickets.Core.IConfiguration;
-using BookTrainTickets.Data;
+using DomainLibrary.Interfaces;
+using EFDataAccessLibrary;
+using EFDataAccessLibrary.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using System.Configuration;
-using Microsoft.Extensions.Configuration;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
