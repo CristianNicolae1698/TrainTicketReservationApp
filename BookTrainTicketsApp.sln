@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookTrainTicketsConsoleApp"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainTicketsAppWebAPI", "TrainTicketsAppWebAPI\TrainTicketsAppWebAPI.csproj", "{56A0F3A5-A4E6-46F3-96F2-F289F8344381}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDataAccessLibrary", "EFDataAccessLibrary\EFDataAccessLibrary.csproj", "{E6EEFC35-85AF-4160-A9C2-3603D9C4FF94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{56A0F3A5-A4E6-46F3-96F2-F289F8344381}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56A0F3A5-A4E6-46F3-96F2-F289F8344381}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56A0F3A5-A4E6-46F3-96F2-F289F8344381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6EEFC35-85AF-4160-A9C2-3603D9C4FF94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6EEFC35-85AF-4160-A9C2-3603D9C4FF94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6EEFC35-85AF-4160-A9C2-3603D9C4FF94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6EEFC35-85AF-4160-A9C2-3603D9C4FF94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

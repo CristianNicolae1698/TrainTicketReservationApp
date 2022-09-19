@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookTrainTickets\BookTrainTicketsConsoleApp.csproj" />
+    <ProjectReference Include="..\EFDataAccessLibrary\EFDataAccessLibrary.csproj" />
   </ItemGroup>
 
 </Project>

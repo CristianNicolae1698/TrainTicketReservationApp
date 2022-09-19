@@ -821,6 +821,16 @@
         "runtime": {
           "bin/placeholder/BookTrainTicketsConsoleApp.dll": {}
         }
+      },
+      "EFDataAccessLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/EFDataAccessLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EFDataAccessLibrary.dll": {}
+        }
       }
     }
   },
@@ -2355,11 +2365,17 @@
       "type": "project",
       "path": "../BookTrainTickets/BookTrainTicketsConsoleApp.csproj",
       "msbuildProject": "../BookTrainTickets/BookTrainTicketsConsoleApp.csproj"
+    },
+    "EFDataAccessLibrary/1.0.0": {
+      "type": "project",
+      "path": "../EFDataAccessLibrary/EFDataAccessLibrary.csproj",
+      "msbuildProject": "../EFDataAccessLibrary/EFDataAccessLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "BookTrainTicketsConsoleApp >= 1.0.0",
+      "EFDataAccessLibrary >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -2397,6 +2413,9 @@
           "projectReferences": {
             "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTicketsConsoleApp.csproj": {
               "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\BookTrainTickets\\BookTrainTicketsConsoleApp.csproj"
+            },
+            "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\EFDataAccessLibrary\\EFDataAccessLibrary.csproj": {
+              "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\EFDataAccessLibrary\\EFDataAccessLibrary.csproj"
             }
           }
         }
