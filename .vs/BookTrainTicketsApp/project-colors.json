@@ -35,7 +35,12 @@
       "ProjectGuid": "56a0f3a5-a4e6-46f3-96f2-f289f8344381",
       "DisplayName": "TrainTicketsAppWebAPI",
       "ColorIndex": 5
+    },
+    "e6eefc35-85af-4160-a9c2-3603d9c4ff94": {
+      "ProjectGuid": "e6eefc35-85af-4160-a9c2-3603d9c4ff94",
+      "DisplayName": "EFDataAccessLibrary",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }
