@@ -7,49 +7,44 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using DomainLibrary.Interfaces;
+using System.Linq.Expressions;
 
 namespace EFDataAccessLibrary.Repositories
 {
-    public class GenericRepository<T> :IGenericRepository<T> where T:class
+    public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        protected BookingContext context;
-        
-        protected DbSet<T> dbSet;
-
-        protected readonly ILogger _logger;
-
-        //dependency injection
-
-        public GenericRepository(BookingContext _context, ILogger logger)
+        protected readonly BookingContext _context;
+        public GenericRepository(BookingContext context)
         {
             _context = context;
-            _logger = logger;
         }
-
-        public virtual async Task<IEnumerable<T>> All()
+        public void Add(T entity)
         {
-            return await dbSet.ToListAsync();
+            _context.Set<T>().Add(entity);
         }
-
-        public async Task<T> GetById(Guid id)
+        public void AddRange(IEnumerable<T> entities)
         {
-            return await dbSet.FindAsync(id);
+            _context.Set<T>().AddRange(entities);
         }
-
-        public async Task<bool> Add(T entity)
+        public IEnumerable<T> Find(Expression<Func<T, bool>> expression)
         {
-            await dbSet.AddAsync(entity);
-            return true;
+            return _context.Set<T>().Where(expression);
         }
-
-        public virtual Task<bool> Delete(Guid id)
+        public IEnumerable<T> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().ToList();
         }
-
-        public virtual Task<bool> Upsert(T entity)
+        public T GetById(int id)
         {
-            throw new NotImplementedException();
+            return _context.Set<T>().Find(id);
+        }
+        public void Remove(T entity)
+        {
+            _context.Set<T>().Remove(entity);
+        }
+        public void RemoveRange(IEnumerable<T> entities)
+        {
+            _context.Set<T>().RemoveRange(entities);
         }
     }
 }

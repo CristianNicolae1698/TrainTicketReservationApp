@@ -5,70 +5,14 @@ using Microsoft.Extensions.Logging;
 
 namespace EFDataAccessLibrary.Repositories
 {
-    public class RouteRepository : GenericRepository<Route>,IRouteRepository
+    public class RouteRepository : GenericRepository<Route>, IRouteRepository
     {
-        public RouteRepository(BookingContext context, ILogger logger):base(context, logger)
+        public RouteRepository(BookingContext context) : base(context)
         {
-
         }
-
-
-        public override async Task<IEnumerable<Route>> All()
+        public IEnumerable<Route> GetPopularRoutes(int count)
         {
-            try
-            {
-                return await dbSet.ToListAsync();
-            }
-
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "{Repo} All method error", typeof(RouteRepository));
-                return new List<Route>();
-            }
-        }
-
-        public override async Task<bool> Upsert(Route entity)
-        {
-            var existingRoute=await dbSet.Where(x=>x.Id==entity.Id).FirstOrDefaultAsync();
-
-            if (existingRoute == null)
-                return await Add(entity);
-            
-            existingRoute.RouteName=entity.RouteName;
-            existingRoute.Id = entity.Id;
-
-            return true;
-
-            try
-            {
-                
-            }
-
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "{Repo} Upsert method error", typeof(RouteRepository));
-                return false;
-            }
-
-        }
-
-        public override async Task<bool> Delete(Guid id)
-        {
-            try
-            {
-                var exist=await dbSet.Where(x=>x.Id == id).FirstOrDefaultAsync();
-                if (exist != null)
-                {
-                    dbSet.Remove(exist);
-                    return true;
-                }
-                return false;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "{Repo} Delete method error", typeof(RouteRepository));
-                return false;
-            }
+            return _context.Routes.OrderByDescending(d => d.StationOrder).Take(count).ToList();
         }
     }
 }

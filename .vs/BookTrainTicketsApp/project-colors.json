@@ -40,7 +40,12 @@
       "ProjectGuid": "e6eefc35-85af-4160-a9c2-3603d9c4ff94",
       "DisplayName": "EFDataAccessLibrary",
       "ColorIndex": 6
+    },
+    "d5659e01-880c-4768-ba4f-2340cbcc45e7": {
+      "ProjectGuid": "d5659e01-880c-4768-ba4f-2340cbcc45e7",
+      "DisplayName": "DomainLibrary",
+      "ColorIndex": 7
     }
   },
-  "NextColorIndex": 7
+  "NextColorIndex": 8
 }

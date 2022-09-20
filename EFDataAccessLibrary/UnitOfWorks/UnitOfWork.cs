@@ -9,38 +9,24 @@ using Microsoft.Extensions.Logging;
 
 namespace EFDataAccessLibrary.UnitOfWorks
 {
-    public class UnitOfWork :IUnitOfWork, IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
-
         private readonly BookingContext _context;
-        
-        private readonly ILogger _logger;
-
-        public IRouteRepository Routes { get; set; }
-
-        public UnitOfWork( BookingContext context, ILoggerFactory loggerFactory)
+        public UnitOfWork(BookingContext context)
         {
             _context = context;
-            _logger = loggerFactory.CreateLogger("logs");
-
-            Routes = new RouteRepository(_context, _logger);
+            Routes = new RouteRepository(_context);
+            Stations = new StationRepository(_context);
         }
-
-
-        public async Task CompleteAsync()
+        public IRouteRepository Routes { get; private set; }
+        public IStationRepository Stations { get; private set; }
+        public int Complete()
         {
-            await _context.SaveChangesAsync();
+            return _context.SaveChanges();
         }
-
-
-        //garbage collector ???
-
         public void Dispose()
         {
             _context.Dispose();
         }
-
-
-        
     }
 }

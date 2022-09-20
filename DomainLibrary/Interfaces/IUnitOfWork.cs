@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace DomainLibrary.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork:IDisposable
     {
-        IRouteRepository Routes { get; set; }
+        IRouteRepository Routes { get; }
+        IStationRepository Stations { get; }
 
-        Task CompleteAsync();
+        int Complete();
     }
 }

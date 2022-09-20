@@ -10,6 +10,7 @@ namespace DomainLibrary.Interfaces
 {
     public interface IRouteRepository :IGenericRepository<Route>
     {
+        IEnumerable<Route> GetPopularRoutes(int count);
 
     }
 }
