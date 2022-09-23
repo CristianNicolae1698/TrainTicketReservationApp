@@ -15,31 +15,37 @@ namespace TrainTicketsAppWebAPI.Controllers
             _unitOfWork = unitOfWork;
         }
 
+        
 
 
-        public IActionResult GetPopularRoutes([FromQuery] int count)
+
+        [HttpGet]
+        public async Task<ActionResult<List<DomainLibrary.Entities.Route>>> GetRoutes()
         {
-            var popularRoutes = _unitOfWork.Routes.GetPopularRoutes(count);
-            return Ok(popularRoutes);
+            var routes = new List<DomainLibrary.Entities.Route>
+            {
+                new DomainLibrary.Entities.Route
+                {
+                    RouteName="Sebes-Cluj",
+                    StationOrder=99
+                }
+            };
+            return Ok(routes);
         }
 
         [HttpPost]
-        public void Post([FromBody] string routeName)
+        public async Task<ActionResult<List<DomainLibrary.Entities.Route>>> AddRouteAndStation(DomainLibrary.Entities.Route route,Station station)
         {
-            var route = new DomainLibrary.Entities.Route
-            {
-                RouteName = routeName,
-               
-            };
-            //var station = new Station
-            //{
-            //    StationName="Bucuresti",
-            //};
+            //to be implemented 
             _unitOfWork.Routes.Add(route);
-           // _unitOfWork.Stations.Add(station);
             _unitOfWork.Complete();
-            
-        } 
+            return Ok();
+        }
+
+
+
+
+
 
     }
 }
