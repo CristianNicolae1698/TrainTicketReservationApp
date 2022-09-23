@@ -24,21 +24,21 @@ namespace TrainTicketsAppWebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddRouteAndStation()
+        public void Post([FromBody] string routeName)
         {
             var route = new DomainLibrary.Entities.Route
             {
-                RouteName = "Bucuresti-Constanta",
-                StationOrder = 3
+                RouteName = routeName,
+               
             };
-            var station = new Station
-            {
-                StationName="Bucuresti",
-            };
+            //var station = new Station
+            //{
+            //    StationName="Bucuresti",
+            //};
             _unitOfWork.Routes.Add(route);
-            _unitOfWork.Stations.Add(station);
+           // _unitOfWork.Stations.Add(station);
             _unitOfWork.Complete();
-            return Ok();
+            
         } 
 
     }

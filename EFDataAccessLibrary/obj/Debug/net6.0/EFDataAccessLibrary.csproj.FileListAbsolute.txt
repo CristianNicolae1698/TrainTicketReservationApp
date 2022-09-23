@@ -3,7 +3,6 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\o
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\EFDataAccessLibrary.AssemblyInfoInputs.cache
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\EFDataAccessLibrary.AssemblyInfo.cs
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\EFDataAccessLibrary.csproj.CoreCompileInputs.cache
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\appsettings.json
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\EFDataAccessLibrary.deps.json
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\EFDataAccessLibrary.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\ref\EFDataAccessLibrary.dll
