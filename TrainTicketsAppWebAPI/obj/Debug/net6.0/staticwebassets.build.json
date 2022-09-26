@@ -1,11 +1,71 @@
 {
   "Version": 1,
-  "Hash": "/Cqeox4vhcC4Zzbr7vNNY66GLpstrPnxJVT18ktbK7I=",
+  "Hash": "T+KqykgbSqDaS9E7v+DVhMe0g58mCCKmFHntqcrApS8=",
   "Source": "TrainTicketsAppWebAPI",
   "BasePath": "_content/TrainTicketsAppWebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "TrainTicketsAppWebAPI\\wwwroot",
+      "Source": "TrainTicketsAppWebAPI",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "BasePath": "_content/TrainTicketsAppWebAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\css\\site.css",
+      "SourceId": "TrainTicketsAppWebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "BasePath": "_content/TrainTicketsAppWebAPI",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\index.html",
+      "SourceId": "TrainTicketsAppWebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "BasePath": "_content/TrainTicketsAppWebAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\js\\site.js",
+      "SourceId": "TrainTicketsAppWebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "BasePath": "_content/TrainTicketsAppWebAPI",
+      "RelativePath": "js/site.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\site.js"
+    }
+  ]
 }
