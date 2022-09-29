@@ -1,50 +1,48 @@
-﻿*{
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Verdana, Verdana, Geneva, Tahoma, sans-serif;
-
+    font-family: Verdana, Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
-    width: 100%;
-    height: 100vh;
-
-}
-.container{
+body {
     width: 100%;
     height: 100vh;
 }
 
-.routes_sidebar{
-    width:400px;
+.container {
+    width: 100%;
     height: 100vh;
-    border:2px solid #00ff21;
+}
+
+.routes_sidebar {
+    width: 400px;
+    height: 100vh;
+    border: 2px solid #00ff21;
     padding: 50px;
 }
 
-.routes_sidebar input{
-    width:100%;
-    margin-bottom: 10px;
-    font-size: 13px;
-    padding: 10px;
-}
+    .routes_sidebar input {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 13px;
+        padding: 10px;
+    }
 
-.routes_sidebar textarea{
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    max-width: 100%;
-}
+    .routes_sidebar textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+        max-width: 100%;
+    }
 
-.routes_sidebar button {
-        
-margin-bottom: 10px;
-outline:none;
-border: none;
-background-color: #353535;
-color:#FFF;
-padding:10px 20px;
-border-radius: 3px;
-cursor:pointer;
-}
+    .routes_sidebar button {
+        margin-bottom: 10px;
+        outline: none;
+        border: none;
+        background-color: #353535;
+        color: #FFF;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+    }

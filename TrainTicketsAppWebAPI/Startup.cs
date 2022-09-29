@@ -48,6 +48,8 @@ namespace TrainTicketsAppWebAPI
             app.UseStaticFiles();
 
 
+            app.UseCors(policy=>policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

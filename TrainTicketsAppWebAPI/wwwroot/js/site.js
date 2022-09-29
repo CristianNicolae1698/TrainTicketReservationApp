@@ -1,6 +1,6 @@
 ﻿
 const addButton=document.querySelector('#btnAdd')
-const routeNameInput=document.querySelector("#routeName")
+const routeNameInput=document.querySelector("#title")
 
 function addItem(routeName) {
 
