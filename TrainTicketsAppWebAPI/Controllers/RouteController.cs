@@ -33,14 +33,14 @@ namespace TrainTicketsAppWebAPI.Controllers
             return Ok(routes);
         }
 
-        //[HttpPost]
-        //public async Task<ActionResult<List<DomainLibrary.Entities.Route>>> AddRouteAndStation(DomainLibrary.Entities.Route route,Station station)
-        //{
-        //    //to be implemented 
-        //    _unitOfWork.Routes.Add(route);
-        //    _unitOfWork.Complete();
-        //    return Ok();
-        //}
+        [HttpPost]
+        public async Task<ActionResult<List<DomainLibrary.Entities.Route>>> AddRoute(DomainLibrary.Entities.Route route)
+        {
+               
+              _unitOfWork.Routes.Add(route);
+              _unitOfWork.Complete();
+              return Ok();
+        }
 
 
 

@@ -1,23 +1,50 @@
-﻿input[type='submit'], button, [aria-label] {
-    cursor: pointer;
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
-#editForm {
-    display: none;
+body{
+    width: 100%;
+    height: 100vh;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
 }
 
-table {
-    font-family: Arial, sans-serif;
-    border: 1px solid;
-    border-collapse: collapse;
+.routes_sidebar{
+    width:400px;
+    height: 100vh;
+    border:2px solid #00ff21;
+    padding: 50px;
 }
 
-th {
-    background-color: #f8f8f8;
-    padding: 5px;
+.routes_sidebar input{
+    width:100%;
+    margin-bottom: 10px;
+    font-size: 13px;
+    padding: 10px;
 }
 
-td {
-    border: 1px solid;
-    padding: 5px;
+.routes_sidebar textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.routes_sidebar button {
+        
+margin-bottom: 10px;
+outline:none;
+border: none;
+background-color: #353535;
+color:#FFF;
+padding:10px 20px;
+border-radius: 3px;
+cursor:pointer;
 }
