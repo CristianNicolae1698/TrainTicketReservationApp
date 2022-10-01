@@ -28,6 +28,7 @@ namespace TrainTicketsAppWebAPI
             services.AddTransient(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddTransient<IRouteRepository, RouteRepository>();
             services.AddTransient<IStationRepository, StationRepository>();
+            services.AddTransient<ITrainRepository, TrainRepository>();
             #endregion
             services.AddTransient<IUnitOfWork, UnitOfWork>();
         }

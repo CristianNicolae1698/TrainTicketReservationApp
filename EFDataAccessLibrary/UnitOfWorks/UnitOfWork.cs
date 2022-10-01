@@ -17,6 +17,7 @@ namespace EFDataAccessLibrary.UnitOfWorks
             _context = context;
             Routes = new RouteRepository(_context);
             Stations = new StationRepository(_context);
+            Trains=new TrainRepository(_context);
         }
         public IRouteRepository Routes { get; private set; }
         public IStationRepository Stations { get; private set; }
