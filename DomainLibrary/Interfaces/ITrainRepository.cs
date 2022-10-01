@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace DomainLibrary.Interfaces
 {
-    public interface IStationRepository :IGenericRepository <Station>
+    public interface ITrainRepository :IGenericRepository<Train>
     {
-
 
 
     }

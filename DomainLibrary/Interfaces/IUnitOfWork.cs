@@ -10,7 +10,9 @@ namespace DomainLibrary.Interfaces
     {
         IRouteRepository Routes { get; }
         IStationRepository Stations { get; }
-
+        ITrainRepository Trains { get; }
+        IClientRepository Clients { get; } 
+        IBookingRepository Bookings { get; }    
         int Complete();
     }
 }

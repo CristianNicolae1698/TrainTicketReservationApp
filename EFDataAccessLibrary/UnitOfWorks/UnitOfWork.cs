@@ -20,6 +20,13 @@ namespace EFDataAccessLibrary.UnitOfWorks
         }
         public IRouteRepository Routes { get; private set; }
         public IStationRepository Stations { get; private set; }
+        public IBookingRepository Bookings { get; private set; }
+        public IClientRepository Clients { get; private set; }
+        public ITrainRepository Trains { get; private set; }
+
+
+
+
         public int Complete()
         {
             return _context.SaveChanges();
