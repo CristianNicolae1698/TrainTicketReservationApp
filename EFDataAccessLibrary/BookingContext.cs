@@ -16,6 +16,16 @@ namespace EFDataAccessLibrary
 
         
 
-        public BookingContext(DbContextOptions<BookingContext> options) : base(options) { }
+        public BookingContext(DbContextOptions<BookingContext> options) : base(options) 
+        {
+           
+
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Seed();
+        }
+
     }
 }

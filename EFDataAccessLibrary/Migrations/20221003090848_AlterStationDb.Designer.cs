@@ -4,6 +4,7 @@ using EFDataAccessLibrary;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookTrainTickets.Migrations
 {
     [DbContext(typeof(BookingContext))]
-    partial class BookingContextModelSnapshot : ModelSnapshot
+    [Migration("20221003090848_AlterStationDb")]
+    partial class AlterStationDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -103,6 +105,18 @@ namespace BookTrainTickets.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Stations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("c71953f2-3cdb-4000-bc95-c6297c1b61da"),
+                            StationName = "Ciolpani"
+                        },
+                        new
+                        {
+                            Id = new Guid("cdb933ba-cae1-44b7-b785-4bfbfce4549e"),
+                            StationName = "Pipera"
+                        });
                 });
 
             modelBuilder.Entity("DomainLibrary.Entities.Train", b =>

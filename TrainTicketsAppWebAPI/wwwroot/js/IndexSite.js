@@ -1,6 +1,6 @@
 ﻿
-const addButton=document.querySelector('#btnAdd')
-const routeNameInput=document.querySelector("#title")
+const addButton = document.querySelector('#btnAdd')
+const routeNameInput = document.querySelector("#title")
 
 function addItem(routeName) {
 
@@ -18,12 +18,11 @@ function addItem(routeName) {
     })
         .then(data => data.json())
         .then(response => console.log(response));
-    
+
 }
 
 addButton.addEventListener('click', function () {
 
 
     addItem(routeNameInput.value);
-} )
-
+})

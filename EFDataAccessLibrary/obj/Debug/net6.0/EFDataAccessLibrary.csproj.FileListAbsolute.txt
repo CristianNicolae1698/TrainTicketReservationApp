@@ -13,3 +13,5 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\o
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\EFDataAccessLibrary.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\ref\EFDataAccessLibrary.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\EFDataAccessLibrary.pdb
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\EFDataAccessLibrary.runtimeconfig.json
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\EFDataAccessLibrary.genruntimeconfig.cache
