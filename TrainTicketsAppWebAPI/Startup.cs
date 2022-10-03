@@ -1,5 +1,6 @@
 ﻿using DomainLibrary.Interfaces;
 using EFDataAccessLibrary;
+using EFDataAccessLibrary.Migrations;
 using EFDataAccessLibrary.Repositories;
 using EFDataAccessLibrary.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
@@ -57,6 +58,11 @@ namespace TrainTicketsAppWebAPI
             {
                 endpoints.MapControllers();
             });
+
+
+            //Seed Database
+            BookingDbInitializer.Seed(app);
+
         }
 
 
