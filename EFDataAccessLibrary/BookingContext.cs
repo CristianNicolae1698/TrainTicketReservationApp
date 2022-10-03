@@ -14,18 +14,14 @@ namespace EFDataAccessLibrary
         
         public DbSet<Train> Trains { get; set; }
 
-        
 
-        public BookingContext(DbContextOptions<BookingContext> options) : base(options) 
+
+        public BookingContext(DbContextOptions<BookingContext> options) : base(options)
         {
-           
-
+            Database.SetInitializer
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Seed();
-        }
+
 
     }
 }
