@@ -36,13 +36,7 @@ namespace TrainTicketsAppWebAPI.Controllers
             return Ok(route);
 
         }
-        [HttpGet]
-        public async Task<ActionResult> GetAllRoutes()
-        {
-            
-            return Ok(_unitOfWork.Routes.GetAll());
-
-        }
+        
 
         [HttpGet]
         public async Task<ActionResult> GetRouteByIdBody([FromBody] Guid id)
@@ -57,6 +51,13 @@ namespace TrainTicketsAppWebAPI.Controllers
 
         }
 
+        [HttpGet]
+        public async Task<ActionResult> GetAllRoutes()
+        {
+
+            return Ok(_unitOfWork.Routes.GetAll());
+
+        }
 
 
 
