@@ -78,3 +78,6 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.Extensions.Hosting.dll

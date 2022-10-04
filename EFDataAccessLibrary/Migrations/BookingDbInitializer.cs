@@ -10,23 +10,62 @@ using System.Threading.Tasks;
 namespace EFDataAccessLibrary.Migrations
 {
     public static class BookingDbInitializer
-    {
-        public static void Seed(IApplicationBuilder applicationBuilder)
+    {    
+        public static void Initialize(BookingContext context)
         {
-            using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
-            {
-                var context = serviceScope.ServiceProvider.GetService<BookingContext>();
-                context.Database.EnsureCreated();
-                var train1 = new Train { Id = Guid.NewGuid(), TrainNumber = "123442q4433233", TrainType = "RapidBucuresti" };
-                var train2 = new Train { Id = Guid.NewGuid(), TrainNumber = "9763662", TrainType = "InterCity" };
+            context.Database.EnsureCreated();
 
-                var route1 = new Route { Id = Guid.NewGuid(), RouteName = "Bucuresti-Craiova" };
-                route1.Trains.Add(train1);
-                route1.Trains.Add(train2);
-                context.SaveChanges();
+            //Look for any routes
+            if (context.Trains.Any() && context.Stations.Any() && context.Routes.Any())
+            {
+                return; //DB has been seeded
             }
+
+            List<Train> trainList = new List<Train>()
+            {
+                new Train{Id=Guid.NewGuid(),TrainNumber="23456", TrainType="RapidBucuresti"},
+                new Train{Id=Guid.NewGuid(),TrainNumber="987654321", TrainType="AcceleratulDeBuzau"}
+            };
+            
+            foreach(var train1 in trainList)
+            {
+                context.Trains.Add(train1);
+            }
+            context.SaveChanges();
+
+            List<Station> stationList = new List<Station>()
+            {
+                new Station{Id=Guid.NewGuid(),StationName="Bucuresti"},
+                new Station{Id=Guid.NewGuid(),StationName="Craiova"},
+                new Station{Id=Guid.NewGuid(),StationName="Sibiu"},
+                new Station{Id=Guid.NewGuid(),StationName="Constanta"}
+
+            };
+            foreach(var station in stationList)
+            {
+                context.Stations.Add(station);
+            }
+            context.SaveChanges();
+            var route = new Route
+            { 
+                RouteName = $"{stationList[0].StationName} - {stationList[1].StationName} - {trainList[0].TrainType}"
+             };
+            Station stationArrival = context.Stations.First(s => s.StationName == stationList[0].StationName);
+            route.Stations.Add(stationArrival);
+            Station stationDeparture = context.Stations.First(s => s.StationName == stationList[1].StationName);
+            route.Stations.Add(stationDeparture);
+            Train train = context.Trains.First(t => t.TrainType == trainList[0].TrainType);
+            route.Trains.Add(train);
+            context.Routes.Add(route);
+            context.SaveChanges();
+
+
+           
+
         }
 
-        
+
+
     }
+    
 }

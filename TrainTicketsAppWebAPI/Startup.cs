@@ -60,8 +60,7 @@ namespace TrainTicketsAppWebAPI
             });
 
 
-            //Seed Database
-            BookingDbInitializer.Seed(app);
+            
 
         }
 
