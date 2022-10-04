@@ -10,9 +10,11 @@ namespace EFDataAccessLibrary.Repositories
         public RouteRepository(BookingContext context) : base(context)
         {
         }
-        public IEnumerable<Route> GetPopularRoutes(int count)
+        public IEnumerable<Route> GetRouteByName(string name)
         {
-            return _context.Routes.OrderByDescending(d => d.StationOrder).Take(count).ToList();
+            
+                return (IEnumerable<Route>)_context.Routes.First(r => r.RouteName == name);
+            
         }
     }
 }
