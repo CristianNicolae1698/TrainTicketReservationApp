@@ -45,7 +45,12 @@
       "ProjectGuid": "d5659e01-880c-4768-ba4f-2340cbcc45e7",
       "DisplayName": "DomainLibrary",
       "ColorIndex": 7
+    },
+    "24ccb597-a0c0-4c04-b482-d79e5695572b": {
+      "ProjectGuid": "24ccb597-a0c0-4c04-b482-d79e5695572b",
+      "DisplayName": "TestApp",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 9
 }

@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Routes</title>
+    <title>Search for Route</title>
     <link rel="stylesheet" href="css/HomePage.css" type="text/css" />
 </head>
 <body>
-    <div class="container">
-        <div class="">
-            <input type="text" id="title" placeholder="Departure Station">
-            <textarea id="description" placeholder="Arrival Station"></textarea>
-            <button id="btnSearch" onclick="window.location.href = 'TrainSearch.html';">Search</button>
-        </div>
-        <div class="">
-        </div>
+   
+
+        
+    <form action="https://localhost:7007/api/index" method="get">
+        <label for="ChooseRoute">Choose Route</label>
+        <input type="text" name="arrivalStation" placeholder="Arrival Station"><br><br>
+        <input type="text" name="departureStation" placeholder="Departure Station"><br><br>
+       
+        <input type="submit" value="Submit">
+    </form>
     </div>
 
 
-    <script src="js/HomePage.js"></script>
+    <script src="js/IndexSite.js"></script>
 </body>
 
 </html>

@@ -18,39 +18,11 @@ namespace TrainTicketsAppWebAPI.Controllers
             _unitOfWork = unitOfWork;
         }
 
+
         
 
 
-
-        [HttpGet]
-        [Route("{id:guid}")]
-
-        public async Task<ActionResult> GetRouteById([FromRoute]Guid id)
-        {
-            var route = _unitOfWork.Routes.GetById(id);
-
-            if (route == null)
-            {
-                return NotFound();
-            }
-            return Ok(route);
-
-        }
-
-
-        //[HttpGet]
-        //public async Task<ActionResult> GetRouteByIdBody([FromBody] Guid id)
-        //{
-        //    var route = _unitOfWork.Routes.GetById(id);
-
-        //    if (route == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return Ok(route);
-
-        //}
-
+        
         //[HttpGet]
         //public async Task<ActionResult> GetAllRoutes()
         //{
@@ -59,10 +31,18 @@ namespace TrainTicketsAppWebAPI.Controllers
 
         //}
 
+
+
+        
+
+
+
+
         [HttpGet]
-        public async Task<ActionResult> GetRouteIdByName([FromBody] string RouteName)
+
+        public async Task<ActionResult> GetRouteIdByStations([FromQuery] string arrivalStation, string departureStation)
         {
-            //var route = _unitOfWork.Routes.GetRouteByName(RouteName);
+            string RouteName = $"{arrivalStation} - {departureStation}";
             var route = _unitOfWork.Routes.GetById(_unitOfWork.Routes.GetRouteIdByName(RouteName));
 
             if (route == null)
@@ -74,31 +54,14 @@ namespace TrainTicketsAppWebAPI.Controllers
         }
 
 
-        //_unitOfWork.Routes.GetRouteId("Bucuresti", "Craiova"
-
-        //[HttpGet]
-        //public async Task<ActionResult> GetSpecifiedRoute([FromBody] Guid id)
-        //{
-
-        //    var route = _unitOfWork.Routes.GetById(id);
-
-        //    if (route == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return Ok(route);
-
-        //}
-
-
 
         [HttpPost]
         public async Task<ActionResult<List<DomainLibrary.Entities.Route>>> AddRoute(DomainLibrary.Entities.Route route)
         {
-               
-              _unitOfWork.Routes.Add(route);
-              _unitOfWork.Complete();
-              return Ok();
+
+            _unitOfWork.Routes.Add(route);
+            _unitOfWork.Complete();
+            return Ok();
         }
 
 

@@ -1,7 +1,7 @@
 ﻿
-const addButton = document.querySelector('#btnAdd')
-const routeNameInput = document.querySelector("#title")
-
+const addButton = document.querySelector('#btnSearch')
+const routeNameInput = document.querySelector("#departureStation")
+var responseVariabile;
 function addItem(routeName) {
 
     const body = {
@@ -9,7 +9,7 @@ function addItem(routeName) {
     };
 
 
-    fetch(' https://localhost:7007/api/route', {
+    fetch(' https://localhost:7007/api/index', {
         method: 'POST',
         body: JSON.stringify(body),
         headers: {
@@ -26,3 +26,6 @@ addButton.addEventListener('click', function () {
 
     addItem(routeNameInput.value);
 })
+
+
+
