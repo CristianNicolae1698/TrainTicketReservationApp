@@ -36,12 +36,34 @@ namespace TrainTicketsAppWebAPI.Controllers
             return Ok(route);
 
         }
-        
+
+
+        //[HttpGet]
+        //public async Task<ActionResult> GetRouteByIdBody([FromBody] Guid id)
+        //{
+        //    var route = _unitOfWork.Routes.GetById(id);
+
+        //    if (route == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return Ok(route);
+
+        //}
+
+        //[HttpGet]
+        //public async Task<ActionResult> GetAllRoutes()
+        //{
+
+        //    return Ok(_unitOfWork.Routes.GetAll());
+
+        //}
 
         [HttpGet]
-        public async Task<ActionResult> GetRouteByIdBody([FromBody] Guid id)
+        public async Task<ActionResult> GetRouteIdByName([FromBody] string RouteName)
         {
-            var route = _unitOfWork.Routes.GetById(id);
+            //var route = _unitOfWork.Routes.GetRouteByName(RouteName);
+            var route = _unitOfWork.Routes.GetById(_unitOfWork.Routes.GetRouteIdByName(RouteName));
 
             if (route == null)
             {
@@ -51,13 +73,22 @@ namespace TrainTicketsAppWebAPI.Controllers
 
         }
 
-        [HttpGet]
-        public async Task<ActionResult> GetAllRoutes()
-        {
 
-            return Ok(_unitOfWork.Routes.GetAll());
+        //_unitOfWork.Routes.GetRouteId("Bucuresti", "Craiova"
 
-        }
+        //[HttpGet]
+        //public async Task<ActionResult> GetSpecifiedRoute([FromBody] Guid id)
+        //{
+
+        //    var route = _unitOfWork.Routes.GetById(id);
+
+        //    if (route == null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return Ok(route);
+
+        //}
 
 
 

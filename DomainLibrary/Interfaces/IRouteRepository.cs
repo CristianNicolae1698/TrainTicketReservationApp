@@ -10,7 +10,9 @@ namespace DomainLibrary.Interfaces
 {
     public interface IRouteRepository :IGenericRepository<Route>
     {
-        IEnumerable<Route> GetRouteByName(string name);
+        Route GetRouteByName(string name);
+        Guid GetRouteId(string arrivalStationName, string departureStationName);
+        Guid GetRouteIdByName(string routeName);
 
     }
 }

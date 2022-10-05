@@ -10,12 +10,13 @@ namespace EFDataAccessLibrary.Repositories
         public RouteRepository(BookingContext context) : base(context)
         {
         }
-        public IEnumerable<Route> GetRouteByName(string name)
+        public Route GetRouteByName(string name)
         {
             
-                return (IEnumerable<Route>)_context.Routes.First(r => r.RouteName == name);
+                return _context.Routes.First(r => r.RouteName == name);
             
         }
+
         public Guid GetRouteId(string arrivalStationName, string departureStationName)
         {
             Station arrivalStation=new Station();
@@ -44,6 +45,19 @@ namespace EFDataAccessLibrary.Repositories
                 }
             }
             return Guid.Empty;
+
+        }
+
+        public Guid GetRouteIdByName(string routeName)
+        {
+            if(_context.Routes.First(r => r.RouteName == routeName)!=null)
+            {
+                return _context.Routes.First(r => r.RouteName == routeName).Id;
+            }
+            else
+            {
+                return Guid.Empty;
+            }
 
         }
 
