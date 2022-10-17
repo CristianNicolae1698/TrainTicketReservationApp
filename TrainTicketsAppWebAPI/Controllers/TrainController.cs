@@ -17,12 +17,22 @@ namespace TrainTicketsAppWebAPI.Controllers
         public async Task<ActionResult<List<DomainLibrary.Entities.Train>>> GetTrains()
         {
 
-            _unitOfWork.Trains.GetAll();
-            _unitOfWork.Complete();
-            return Ok();
+
+            return Ok(_unitOfWork.Trains.GetAll());
 
 
         }
+        //[HttpGet]
+        //public async Task<ActionResult<List<DomainLibrary.Entities.Train>>> GetTrainsByRouteName([FromBody] string routeName)
+        //{
+
+            
+            
+
+        //    return Ok(_unitOfWork.Trains.GetTrainsByRouteName(routeName));
+           
+
+        //}
 
         [HttpPost]
 

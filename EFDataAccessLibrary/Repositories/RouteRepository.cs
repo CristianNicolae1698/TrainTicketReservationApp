@@ -10,12 +10,7 @@ namespace EFDataAccessLibrary.Repositories
         public RouteRepository(BookingContext context) : base(context)
         {
         }
-        public Route GetRouteByName(string name)
-        {
-            
-                return _context.Routes.First(r => r.RouteName == name);
-            
-        }
+       
 
         public Guid GetRouteId(string arrivalStationName, string departureStationName)
         {
@@ -48,18 +43,22 @@ namespace EFDataAccessLibrary.Repositories
 
         }
 
-        public Guid GetRouteIdByName(string routeName)
+        public Route GetRouteByName(string routeName)
         {
             if(_context.Routes.First(r => r.RouteName == routeName)!=null)
             {
-                return _context.Routes.First(r => r.RouteName == routeName).Id;
+                return _context.Routes.Include(s => s.Stations).First();
             }
             else
             {
-                return Guid.Empty;
+                return null;
             }
 
         }
+
+
+       
+
 
 
 

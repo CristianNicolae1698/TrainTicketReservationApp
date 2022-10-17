@@ -56,7 +56,8 @@ namespace EFDataAccessLibrary.Migrations
             context.SaveChanges();
             var route1 = new Route
             { 
-                RouteName = $"{stationList[0].StationName} - {stationList[1].StationName}"
+                RouteName = $"{stationList[0].StationName} - {stationList[1].StationName}",
+                StationOrder = 7563525
             };
             Station stationArrival1 = context.Stations.First(s => s.StationName == stationList[0].StationName);
             route1.Stations.Add(stationArrival1);
@@ -72,7 +73,8 @@ namespace EFDataAccessLibrary.Migrations
             context.SaveChanges();
             var route2 = new Route
             {
-                RouteName = $"{stationList[3].StationName} - {stationList[0].StationName}"
+                RouteName = $"{stationList[3].StationName} - {stationList[0].StationName}",
+                StationOrder = 7563525
             };
             Station stationArrival2 = context.Stations.First(s => s.StationName == stationList[3].StationName);
             route2.Stations.Add(stationArrival2);
@@ -88,7 +90,8 @@ namespace EFDataAccessLibrary.Migrations
             context.SaveChanges();
             var route3 = new Route
             {
-                RouteName = $"{stationList[2].StationName} - {stationList[0].StationName}"
+                RouteName = $"{stationList[2].StationName} - {stationList[0].StationName}",
+                StationOrder = 52434177,
             };
             Station stationArrival3 = context.Stations.First(s => s.StationName == stationList[2].StationName);
             route3.Stations.Add(stationArrival3);

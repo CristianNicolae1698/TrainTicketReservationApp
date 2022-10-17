@@ -19,11 +19,11 @@ namespace EFDataAccessLibrary.UnitOfWorks
             Stations = new StationRepository(_context);
             Trains=new TrainRepository(_context);
         }
-        public IRouteRepository Routes { get; private set; }
-        public IStationRepository Stations { get; private set; }
-        public IBookingRepository Bookings { get; private set; }
-        public IClientRepository Clients { get; private set; }
-        public ITrainRepository Trains { get; private set; }
+        public IRouteRepository Routes { get; set; }
+        public IStationRepository Stations { get; set; }
+        public IBookingRepository Bookings { get; set; }
+        public IClientRepository Clients { get; set; }
+        public ITrainRepository Trains { get; set; }
 
 
 
