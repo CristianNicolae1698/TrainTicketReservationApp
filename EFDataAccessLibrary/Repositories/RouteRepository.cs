@@ -55,9 +55,21 @@ namespace EFDataAccessLibrary.Repositories
             }
 
         }
+        public IEnumerable<Station> GetStationsByRouteName(string routeName)
+        {
+            if (_context.Routes.First(r => r.RouteName == routeName) != null)
+            {
+                return _context.Routes.Include(s => s.Stations).First().Stations.ToList();
+            }
+            else
+            {
+                return null;
+            }
+
+        }
 
 
-       
+
 
 
 

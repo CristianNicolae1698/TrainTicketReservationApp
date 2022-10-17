@@ -14,7 +14,9 @@ namespace DomainLibrary.Interfaces
         Guid GetRouteId(string arrivalStationName, string departureStationName);
         Route GetRouteByName(string routeName);
 
-        
+        IEnumerable<Station> GetStationsByRouteName(string routeName);
+
+
 
     }
 }

@@ -64,7 +64,14 @@ namespace TrainTicketsAppWebAPI.Controllers
 
 
         }
-
+        [HttpGet]
+        [Route("getStationsByRouteName")]
+        public async Task<ActionResult> GetStationsByRouteName([FromBody]string routeName)
+        {
+            List<Station> stationList=new List<Station>();
+            stationList=_unitOfWork.Routes.GetStationsByRouteName(routeName).ToList();
+            return Ok(stationList);
+        }
 
 
         [HttpPost]

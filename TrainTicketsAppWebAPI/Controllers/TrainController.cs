@@ -22,17 +22,34 @@ namespace TrainTicketsAppWebAPI.Controllers
 
 
         }
-        //[HttpGet]
-        //public async Task<ActionResult<List<DomainLibrary.Entities.Train>>> GetTrainsByRouteName([FromBody] string routeName)
-        //{
+        [HttpGet]
+        [Route("getTrainsByRouteName")]
+        public async Task<ActionResult<List<DomainLibrary.Entities.Train>>> GetTrainsByRouteName([FromBody] string routeName)
+        {
 
-            
-            
 
-        //    return Ok(_unitOfWork.Trains.GetTrainsByRouteName(routeName));
+            var trainList=new List<DomainLibrary.Entities.Train>();
+            trainList = _unitOfWork.Trains.GetTrainsByRouteName(routeName).ToList();
+            return Ok(trainList);
+
            
 
-        //}
+        }
+
+        [HttpGet]
+        [Route("getFirstTrainByRouteName")]
+        public async Task<ActionResult<List<DomainLibrary.Entities.Train>>> GetFirstTrain([FromBody] string routeName)
+        {
+
+
+            var train = _unitOfWork.Trains.GetFirstTrainFromRouteName(routeName);
+            
+            return Ok(train);
+
+
+
+        }
+
 
         [HttpPost]
 
