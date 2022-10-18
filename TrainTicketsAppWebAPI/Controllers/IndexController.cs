@@ -73,6 +73,16 @@ namespace TrainTicketsAppWebAPI.Controllers
             return Ok(stationList);
         }
 
+        [HttpGet]
+        [Route("getTrainsByRouteName")]
+        public async Task<ActionResult> GetTrainsByRouteName([FromBody] string routeName)
+        {
+            List<Train> stationList = new List<Train>();
+            stationList = _unitOfWork.Routes.GetTrainsByRouteName(routeName).ToList();
+            return Ok(stationList);
+        }
+
+
 
         [HttpPost]
         public async Task<ActionResult<List<DomainLibrary.Entities.Route>>> AddRoute(DomainLibrary.Entities.Route route)

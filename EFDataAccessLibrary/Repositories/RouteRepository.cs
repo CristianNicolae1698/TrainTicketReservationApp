@@ -47,7 +47,7 @@ namespace EFDataAccessLibrary.Repositories
         {
             if(_context.Routes.First(r => r.RouteName == routeName)!=null)
             {
-                return _context.Routes.Include(s => s.Stations).First();
+                return _context.Routes.Include(s => s.Stations).Include(t=>t.Trains).First();
             }
             else
             {
@@ -60,6 +60,19 @@ namespace EFDataAccessLibrary.Repositories
             if (_context.Routes.First(r => r.RouteName == routeName) != null)
             {
                 return _context.Routes.Include(s => s.Stations).First().Stations.ToList();
+            }
+            else
+            {
+                return null;
+            }
+
+        }
+
+        public IEnumerable<Train> GetTrainsByRouteName(string routeName)
+        {
+            if (_context.Routes.First(r => r.RouteName == routeName) != null)
+            {
+                return _context.Routes.Include(t => t.Trains).First().Trains.ToList();
             }
             else
             {

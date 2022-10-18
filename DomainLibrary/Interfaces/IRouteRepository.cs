@@ -16,6 +16,8 @@ namespace DomainLibrary.Interfaces
 
         IEnumerable<Station> GetStationsByRouteName(string routeName);
 
+        IEnumerable<Train> GetTrainsByRouteName(string routeName);
+
 
 
     }
