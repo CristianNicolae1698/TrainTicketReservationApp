@@ -38,14 +38,10 @@ namespace TrainTicketsAppWebAPI.Controllers
 
         public async Task<ActionResult> GetRouteIdByStations([FromQuery] string arrivalStation, string departureStation)
         {
-            string RouteName = $"{arrivalStation} - {departureStation}";
-            var route = _unitOfWork.Routes.GetRouteByName(RouteName);
-
-            if (route == null)
-            {
-                return NotFound();
-            }
-            return Ok(route);
+            string routeName = $"{arrivalStation} - {departureStation}";
+            List<Train> trainList = new List<Train>();
+            trainList = _unitOfWork.Routes.GetTrainsByRouteName(routeName).ToList();
+            return Ok(trainList);
 
 
 
@@ -73,13 +69,17 @@ namespace TrainTicketsAppWebAPI.Controllers
             return Ok(stationList);
         }
 
-        [HttpGet]
+
+        //this method we'll be using in the first request
+
+        [HttpPost]
         [Route("getTrainsByRouteName")]
-        public async Task<ActionResult> GetTrainsByRouteName([FromBody] string routeName)
+        public async Task<ActionResult> GetTrainsByRouteName([FromBody] string arrivalStation, string departureStation)
         {
-            List<Train> stationList = new List<Train>();
-            stationList = _unitOfWork.Routes.GetTrainsByRouteName(routeName).ToList();
-            return Ok(stationList);
+            string routeName = $"{arrivalStation} - {departureStation}";
+            List<Train> trainList = new List<Train>();
+            trainList = _unitOfWork.Routes.GetTrainsByRouteName(routeName).ToList();
+            return Ok(trainList);
         }
 
 
