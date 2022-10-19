@@ -4,6 +4,7 @@ using EFDataAccessLibrary;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using EFDataAccessLibrary.Repositories;
+
 using Route = DomainLibrary.Entities.Route;
 
 namespace TrainTicketsAppWebAPI.Controllers
@@ -74,9 +75,9 @@ namespace TrainTicketsAppWebAPI.Controllers
 
         [HttpPost]
         [Route("getTrainsByRouteName")]
-        public async Task<ActionResult> GetTrainsByRouteName([FromBody] string arrivalStation, string departureStation)
+        public async Task<ActionResult> GetTrainsByRouteName([FromBody] string routeName)
         {
-            string routeName = $"{arrivalStation} - {departureStation}";
+            
             List<Train> trainList = new List<Train>();
             trainList = _unitOfWork.Routes.GetTrainsByRouteName(routeName).ToList();
             return Ok(trainList);

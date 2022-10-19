@@ -85,3 +85,10 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll

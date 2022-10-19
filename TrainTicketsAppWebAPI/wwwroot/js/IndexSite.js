@@ -1,31 +1,67 @@
 ﻿
-const addButton = document.querySelector('#btnSearch')
-const routeNameInput = document.querySelector("#departureStation")
+const searchButton = document.querySelector('#btnSearch')
+const routeNameInput = document.querySelector("#routeName")
 var responseVariabile;
-function addItem(routeName) {
+async function searchForRoute(routeName) {
 
     const body = {
         "routeName": routeName
     };
 
 
-    fetch(' https://localhost:7007/api/index', {
+    const response = await fetch('https://localhost:7007/api/index/gettrainsbyroutename', {
         method: 'POST',
         body: JSON.stringify(body),
         headers: {
             "content-type": "application/json"
         }
     })
-        .then(data => data.json())
-        .then(response => console.log(response));
+    var data = await response.json();
+    console.log(data);
+    if (response) {
+        hideloader();
+    }
+    show(data);
+        
 
 }
 
-addButton.addEventListener('click', function () {
+//adding event to the submit search button for calling the searchForRoute function
+
+searchButton.addEventListener('click', function () {
 
 
-    addItem(routeNameInput.value);
+    searchForRoute(routeNameInput.value);
 })
 
+//function to hide the loader
+
+function hideloader() {
+    document.getElementById('loading').style.display = 'none';
+}
+
+//function to display the data in a table for the trains of the specified route
+
+function show(data) {
+    let tab =
+        `<tr>
+          <th>Id</th>
+          <th>Train Number</th>
+          <th>Train Type</th>
+          
+         </tr>`;
+
+    // Loop to access all rows 
+    for (let r of data.list) {
+        tab += `<tr> 
+    <td>${r.id} </td>
+    <td>${r.trainNumber}</td>
+    <td>${r.trainType}</td> 
+          
+    </tr>`;
+    }
+    // Setting innerHTML as tab variable
+    document.getElementById("routes").innerHTML = tab;
+}
 
 

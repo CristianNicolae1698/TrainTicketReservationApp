@@ -1,27 +1,35 @@
 ﻿<!DOCTYPE htnml>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search for Route</title>
-    <link rel="stylesheet" href="css/HomePage.css" type="text/css" />
+    <link rel="stylesheet" href=".css/site.css" type="text/css" />
 </head>
 <body>
-   
+    <div class="container">
+        <div class="routes_sidebar">
+            <input type="text" id="routeName" placeholder="Search for Route">
 
-        
-    <form action="https://localhost:7007/api/index" method="get">
-        <label for="ChooseRoute">Choose Route</label>
-        <input type="text" name="arrivalStation" placeholder="Arrival Station"><br><br>
-        <input type="text" name="departureStation" placeholder="Departure Station"><br><br>
-       
-        <input type="submit" value="Submit">
-    </form>
+            <button id="btnSearch">Search</button>
+        </div>
+        <div class="routes_container">
+        </div>
     </div>
-
-
+    <div class="d-flex justify-content-center">
+        <div class="spinner-border"
+             role="status" id="loading">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <h1>Trains for Specified Route</h1>
+    <!-- table for showing data -->
+    <table id="trains"></table>
     <script src="js/IndexSite.js"></script>
+
 </body>
+
 
 </html>
