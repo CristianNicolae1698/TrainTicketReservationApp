@@ -86,6 +86,7 @@ namespace TrainTicketsAppWebAPI.Controllers
 
 
         [HttpPost]
+        [Route("postRoute")]
         public async Task<ActionResult<List<DomainLibrary.Entities.Route>>> AddRoute(DomainLibrary.Entities.Route route)
         {
 
@@ -94,6 +95,30 @@ namespace TrainTicketsAppWebAPI.Controllers
             return Ok();
         }
 
+        [HttpPost]
+        [Route("postClient")]
+        public async Task<ActionResult<List<DomainLibrary.Entities.Client>>> CreateClient(DomainLibrary.Entities.Client client)
+        {
+
+            _unitOfWork.Clients.Add(client);
+            _unitOfWork.Complete();
+            return Ok();
+        }
+
+        
+        [HttpPost]
+        [Route("postBooking")]
+        public async Task<ActionResult<List<Booking>>> Createbooking()
+        {
+            Guid clientId = new Guid("1926d993-ed67-4b6b-a9e8-36dd64e415d7");
+            Guid trainId = new Guid("887456fa-51f0-45e2-ae3d-cdadf61aabe5");
+            var booking=_unitOfWork.Routes.CreateBooking(clientId, trainId);
+            booking.Price = 47864124;
+            booking.BookingDate = DateTime.Today.ToString();
+            _unitOfWork.Bookings.Add(booking);
+            _unitOfWork.Complete();
+            return Ok();
+        }
 
 
 

@@ -82,6 +82,28 @@ namespace EFDataAccessLibrary.Repositories
         }
 
 
+        public Booking CreateBooking(Guid clientId, Guid trainId)
+        {
+            var booking = new Booking();
+            if (_context.Clients.First(c => c.Id == clientId) != null)
+            {
+                Client client = _context.Clients.First(c=>c.Id == clientId);
+                booking.Clients.Add(client);
+            }
+            if(_context.Trains.First(c => c.Id == trainId) != null)
+            {
+                Train train = _context.Trains.First(t=>t.Id == trainId);
+                booking.Trains.Add(train);
+            }
+            return booking;
+
+
+
+
+        }
+
+        
+
 
 
 

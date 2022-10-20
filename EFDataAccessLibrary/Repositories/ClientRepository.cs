@@ -10,7 +10,7 @@ namespace EFDataAccessLibrary.Repositories
 {
     public class ClientRepository:GenericRepository<Client>,IClientRepository
     {
-        ClientRepository(BookingContext context) : base(context)
+        public ClientRepository(BookingContext context) : base(context)
         {
 
         }

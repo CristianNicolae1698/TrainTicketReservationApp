@@ -10,7 +10,7 @@ namespace EFDataAccessLibrary.Repositories
 {
     public class BookingRepository: GenericRepository<Booking>,IBookingRepository
     {
-        BookingRepository(BookingContext context) : base(context)
+        public BookingRepository(BookingContext context) : base(context)
         {
 
         }
