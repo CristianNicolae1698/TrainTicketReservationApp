@@ -24,9 +24,11 @@ namespace DomainLibrary.Interfaces
 
         public Booking AddClientToBooking(Client client);
 
-        public Booking AddTrainToBooking(Train train);
+        
 
         public Booking CreateBooking(Guid clientId, Guid trainId);
+
+        public Booking AddClientAndTrainToBooking(Client client, Train train);
 
 
     }

@@ -104,10 +104,11 @@ namespace EFDataAccessLibrary.Repositories
 
         }
 
-        public Booking AddTrainToBooking(Train train)
+        public Booking AddClientAndTrainToBooking(Client client, Train train)
         {
             var booking = new Booking();
             booking.Trains.Add(train);
+            booking.Clients.Add(client);
             return booking;
 
         }

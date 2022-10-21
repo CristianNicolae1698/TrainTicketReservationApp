@@ -117,13 +117,42 @@ namespace TrainTicketsAppWebAPI.Controllers
         }
 
         
-        
-
-        [HttpGet]
-        [Route("postBooking")]
-        public async Task<ActionResult<List<Booking>>> CreateBooking([FromQuery]Guid clientId, Guid trainId)
+        public class MyModel
         {
-            var booking = _unitOfWork.Routes.CreateBooking(clientId, trainId);
+            public Guid clientId { get; set; }
+            public Guid trainId { get; set; }
+        }
+        
+        public class ComplexModel
+        {
+            public Client client { get; set; }
+            public Train train { get; set; }
+        }
+
+        [HttpPost]
+        [Route("postComplexBooking")]
+        public async Task<ActionResult<List<Booking>>> CreateBooking([FromBody] ComplexModel complexModel)
+        {
+            var booking1 = new Booking()
+            {
+                BookingDate = DateTime.Today.ToString(),
+                Price = 11111
+
+            };
+            booking1 = _unitOfWork.Routes.AddClientAndTrainToBooking(complexModel.client, complexModel.train);
+            _unitOfWork.Bookings.Add(booking1);
+            _unitOfWork.Complete();
+            return Ok();
+        }
+
+
+
+
+        [HttpPost]
+        [Route("postBooking")]
+        public async Task<ActionResult<List<Booking>>> CreateBooking([FromBody]MyModel model)
+        {
+            var booking = _unitOfWork.Routes.CreateBooking(model.clientId, model.trainId);
             booking.Price = 47864124;
             booking.BookingDate = DateTime.Today.ToString();
             _unitOfWork.Bookings.Add(booking);
