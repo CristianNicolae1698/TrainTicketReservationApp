@@ -18,8 +18,15 @@ namespace DomainLibrary.Interfaces
 
         IEnumerable<Train> GetTrainsByRouteName(string routeName);
 
-        public Booking CreateBooking(Guid clientId, Guid trainId);
+        
 
+        public Guid GetCLientIdByName(string firstName, string lastName);
+
+        public Booking AddClientToBooking(Client client);
+
+        public Booking AddTrainToBooking(Train train);
+
+        public Booking CreateBooking(Guid clientId, Guid trainId);
 
 
     }

@@ -105,14 +105,25 @@ namespace TrainTicketsAppWebAPI.Controllers
             return Ok();
         }
 
-        
-        [HttpPost]
-        [Route("postBooking")]
-        public async Task<ActionResult<List<Booking>>> Createbooking()
+
+        [HttpGet]
+        [Route("getClientId")]
+
+        public async Task<ActionResult<string>> ReturnClientId([FromQuery] string firstName, string lastName)
         {
-            Guid clientId = new Guid("1926d993-ed67-4b6b-a9e8-36dd64e415d7");
-            Guid trainId = new Guid("887456fa-51f0-45e2-ae3d-cdadf61aabe5");
-            var booking=_unitOfWork.Routes.CreateBooking(clientId, trainId);
+            Guid id = Guid.NewGuid();
+            id=_unitOfWork.Routes.GetCLientIdByName(firstName, lastName);
+            return Ok(id);
+        }
+
+        
+        
+
+        [HttpGet]
+        [Route("postBooking")]
+        public async Task<ActionResult<List<Booking>>> CreateBooking([FromQuery]Guid clientId, Guid trainId)
+        {
+            var booking = _unitOfWork.Routes.CreateBooking(clientId, trainId);
             booking.Price = 47864124;
             booking.BookingDate = DateTime.Today.ToString();
             _unitOfWork.Bookings.Add(booking);
