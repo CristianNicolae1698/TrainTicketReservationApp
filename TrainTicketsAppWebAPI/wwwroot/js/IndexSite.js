@@ -56,13 +56,18 @@ function show(data) {
     });
     // Setting innerHTML as tab variable
     document.getElementById("trains").innerHTML = tab;
+
+    // function for the submit button
     $(document).ready(function () {
         $(".btnSelect").on('click', function () {
             var currentRow = $(this).closest("tr");
             var col1 = currentRow.find("td:eq(0)").text();
-            var col2 = currentRow.find("td:eq(1)").text();
+            /*var col2 = currentRow.find("td:eq(1)").text();*/
             var col3 = currentRow.find("td:eq(2)").text();
-            alert(col1 + "\n" + col2 + "\n" + col3);
+            /*alert(col1 + "\n" + "\n" + col3);*/
+            var firstName = window.prompt("What is your First Name");
+            var lastName = window.prompt("What is your First Name");
+            
 
         });
 
