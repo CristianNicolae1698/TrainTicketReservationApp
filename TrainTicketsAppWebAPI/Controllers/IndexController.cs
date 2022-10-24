@@ -21,56 +21,6 @@ namespace TrainTicketsAppWebAPI.Controllers
 
 
 
-
-
-
-        //[HttpGet]
-        [Route("getAllRoutes")]
-
-        public async Task<ActionResult> GetAllRoutes()
-        {
-
-            return Ok(_unitOfWork.Routes.GetAll());
-
-        }
-
-
-        [HttpGet]
-
-        public async Task<ActionResult> GetRouteIdByStations([FromQuery] string arrivalStation, string departureStation)
-        {
-            string routeName = $"{arrivalStation} - {departureStation}";
-            List<Train> trainList = new List<Train>();
-            trainList = _unitOfWork.Routes.GetTrainsByRouteName(routeName).ToList();
-            return Ok(trainList);
-
-
-
-        }
-        
-        [HttpGet]
-        [Route("getRouteByName")]
-        public async Task<ActionResult> GetRouteIdByStations([FromBody] string routeName)
-        {
-
-            var route = _unitOfWork.Routes.GetRouteByName(routeName);
-
-
-            return Ok(route);
-
-
-
-        }
-        [HttpGet]
-        [Route("getStationsByRouteName")]
-        public async Task<ActionResult> GetStationsByRouteName([FromBody]string routeName)
-        {
-            List<Station> stationList=new List<Station>();
-            stationList=_unitOfWork.Routes.GetStationsByRouteName(routeName).ToList();
-            return Ok(stationList);
-        }
-
-
         //this method we'll be using in the first request
 
         [HttpPost]
@@ -85,19 +35,11 @@ namespace TrainTicketsAppWebAPI.Controllers
 
 
 
-        [HttpPost]
-        [Route("postRoute")]
-        public async Task<ActionResult<List<DomainLibrary.Entities.Route>>> AddRoute(DomainLibrary.Entities.Route route)
-        {
-
-            _unitOfWork.Routes.Add(route);
-            _unitOfWork.Complete();
-            return Ok();
-        }
+        //this method we'll be using in the second request
 
         [HttpPost]
         [Route("postClient")]
-        public async Task<ActionResult<List<DomainLibrary.Entities.Client>>> CreateClient(DomainLibrary.Entities.Client client)
+        public async Task<ActionResult<List<DomainLibrary.Entities.Client>>> CreateClient([FromBody] Client client)
         {
 
             _unitOfWork.Clients.Add(client);
@@ -106,53 +48,43 @@ namespace TrainTicketsAppWebAPI.Controllers
         }
 
 
-        [HttpGet]
+
+
+
+        public class ClientModel
+        {
+            public string firstName { get; set; }
+            public string lastName { get; set; }
+        }
+
+        //this method we'll be using in the third request
+        [HttpPost]
         [Route("getClientId")]
 
-        public async Task<ActionResult<string>> ReturnClientId([FromQuery] string firstName, string lastName)
+        public async Task<ActionResult<string>> ReturnClientId([FromBody] ClientModel model)
         {
             Guid id = Guid.NewGuid();
-            id=_unitOfWork.Routes.GetCLientIdByName(firstName, lastName);
+            id=_unitOfWork.Clients.GetCLientIdByName(model.firstName, model.lastName);
             return Ok(id);
         }
 
+
+
+
         
-        public class MyModel
+        public class ClientTrainModel
         {
             public Guid clientId { get; set; }
             public Guid trainId { get; set; }
         }
-        
-        public class ComplexModel
-        {
-            public Client client { get; set; }
-            public Train train { get; set; }
-        }
 
-        [HttpPost]
-        [Route("postComplexBooking")]
-        public async Task<ActionResult<List<Booking>>> CreateBooking([FromBody] ComplexModel complexModel)
-        {
-            var booking1 = new Booking()
-            {
-                BookingDate = DateTime.Today.ToString(),
-                Price = 11111
-
-            };
-            booking1 = _unitOfWork.Routes.AddClientAndTrainToBooking(complexModel.client, complexModel.train);
-            _unitOfWork.Bookings.Add(booking1);
-            _unitOfWork.Complete();
-            return Ok();
-        }
-
-
-
+        //this method we'll be using in the forth request
 
         [HttpPost]
         [Route("postBooking")]
-        public async Task<ActionResult<List<Booking>>> CreateBooking([FromBody]MyModel model)
+        public async Task<ActionResult<List<Booking>>> CreateBooking([FromBody]ClientTrainModel model)
         {
-            var booking = _unitOfWork.Routes.CreateBooking(model.clientId, model.trainId);
+            var booking = _unitOfWork.Bookings.CreateBooking(model.clientId, model.trainId);
             booking.Price = 47864124;
             booking.BookingDate = DateTime.Today.ToString();
             _unitOfWork.Bookings.Add(booking);

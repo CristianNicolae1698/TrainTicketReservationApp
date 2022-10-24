@@ -50,13 +50,23 @@ function show(data) {
     <td>${item.id} </td>
     <td>${item.trainNumber}</td>
     <td>${item.trainType}</td>
+    <td><button class="btnSelect">Select</button></td>
 
     </tr>`;
     });
-
-
     // Setting innerHTML as tab variable
     document.getElementById("trains").innerHTML = tab;
+    $(document).ready(function () {
+        $(".btnSelect").on('click', function () {
+            var currentRow = $(this).closest("tr");
+            var col1 = currentRow.find("td:eq(0)").text();
+            var col2 = currentRow.find("td:eq(1)").text();
+            var col3 = currentRow.find("td:eq(2)").text();
+            alert(col1 + "\n" + col2 + "\n" + col3);
+
+        });
+
+    });
 }
 
 

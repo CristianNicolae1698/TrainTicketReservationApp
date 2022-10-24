@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bvugPaSbI4/Un4s0URfMylyORa0km2y6e/7clkGuQzw=",
+  "Hash": "kRMD8HBpymjPqNlc8yOneSWMX/I1+BZuFZ+JsiFeoR4=",
   "Source": "TrainTicketsAppWebAPI",
   "BasePath": "_content/TrainTicketsAppWebAPI",
   "Mode": "Default",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\IndexSite.js"
-    },
-    {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\TrainDisplay.html",
-      "SourceId": "TrainTicketsAppWebAPI",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
-      "BasePath": "_content/TrainTicketsAppWebAPI",
-      "RelativePath": "TrainDisplay.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\TrainDisplay.html"
     }
   ]
 }

@@ -9,5 +9,10 @@ namespace DomainLibrary.Interfaces
 {
     public interface IClientRepository:IGenericRepository<Client>
     {
+
+        public Guid GetCLientIdByName(string firstName, string lastName);
+
     }
+
+
 }

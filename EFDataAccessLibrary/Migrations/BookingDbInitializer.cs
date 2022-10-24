@@ -21,21 +21,7 @@ namespace EFDataAccessLibrary.Migrations
                 return; //DB has been seeded
             }
 
-            List<Client> clientList = new List<Client>()
-            {
-                new Client{Id=Guid.NewGuid(), FirstName="Timotei", LastName="Corey"},
-            };
-            foreach(var client in clientList)
-            {
-                context.Clients.Add(client);
-            }
-            context.SaveChanges();
-
-            
-
-
-
-
+         
             List<Train> trainList = new List<Train>()
             {
                 new Train{Id=Guid.NewGuid(),TrainNumber="123", TrainType="Regio-BucCv"},
@@ -122,18 +108,7 @@ namespace EFDataAccessLibrary.Migrations
             context.SaveChanges();
 
 
-            var booking1 = new Booking()
-            {
-                BookingDate = DateTime.Today.ToString(),
-                Price=240542
-
-            };
-            booking1.Routes.Add(route3);
-            Client client1=context.Clients.First();
-            booking1.Clients.Add(client1);
-            booking1.Trains.Add(train1R3);
-            context.Bookings.Add(booking1);
-            context.SaveChanges();
+            
 
 
 

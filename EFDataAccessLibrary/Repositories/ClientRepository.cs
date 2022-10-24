@@ -14,5 +14,17 @@ namespace EFDataAccessLibrary.Repositories
         {
 
         }
+
+        public Guid GetCLientIdByName(string firstName, string lastName)
+        {
+            if (_context.Clients.First(c => c.FirstName == firstName && c.LastName == lastName) != null)
+            {
+                return _context.Clients.First(c => c.FirstName == firstName && c.LastName == lastName).Id;
+            }
+            else
+            {
+                return Guid.Empty;
+            }
+        }
     }
 }
