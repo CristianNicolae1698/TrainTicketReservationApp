@@ -1,14 +1,19 @@
 ﻿
-const searchButton = document.querySelector('#btnSearch')
-const routeNameInput = document.querySelector("#routeName")
-var responseVariabile;
+const searchButton = document.querySelector('#btnSearch');
+const departureStationInput = document.querySelector("#departureStation");
+const arrivalStationInput = document.querySelector("#arrivalStation");
 
-async function searchForRoute(routeName) {
+
+async function searchForRoute(arrivalStation, departureStation) {
 
     var data;
-    const response = await fetch('https://localhost:7007/api/index/getTrainsByRouteName', {
+    const body = {
+        "DepartureStation": departureStation,
+        "ArrivalStation": arrivalStation
+    };
+    const response = await fetch('https://localhost:7007/api/index/getTrainsByRoute', {
         method: 'POST',
-        body: JSON.stringify(routeName),
+        body: JSON.stringify(body),
         headers: {
             "content-type": "application/json"
         }
@@ -24,7 +29,7 @@ async function searchForRoute(routeName) {
 //adding event to the submit search button for calling the searchForRoute function
 
 searchButton.addEventListener('click', function () {
-    searchForRoute(routeNameInput.value);
+    searchForRoute(arrivalStationInput.value, departureStationInput.value);
 })
 
 //function to hide the loader

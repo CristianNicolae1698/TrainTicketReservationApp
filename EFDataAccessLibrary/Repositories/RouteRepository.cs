@@ -24,14 +24,19 @@ namespace EFDataAccessLibrary.Repositories
 
         }
 
+        public IEnumerable<Train> GetTrainsByRoute(string departureStation, string arrivalStation)
+        {
+            string routeName = $"{departureStation} - {arrivalStation}";
+            if (_context.Routes.First(r => r.RouteName == routeName) != null)
+            {
+                return _context.Routes.Include(t => t.Trains).First(r => r.RouteName == routeName).Trains.ToList();
+            }
+            else
+            {
+                return null;
+            }
 
-        
-
-        
-
-        
-
-       
+        }
 
 
 
@@ -40,7 +45,16 @@ namespace EFDataAccessLibrary.Repositories
 
 
 
-        
+
+
+
+
+
+
+
+
+
+
 
 
 

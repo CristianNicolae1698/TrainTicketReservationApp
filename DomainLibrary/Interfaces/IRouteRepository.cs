@@ -13,12 +13,13 @@ namespace DomainLibrary.Interfaces
        
         
 
-        IEnumerable<Train> GetTrainsByRouteName(string routeName);
+        public IEnumerable<Train> GetTrainsByRouteName(string routeName);
 
-        
+        public IEnumerable<Train> GetTrainsByRoute(string arrivalStation, string departureStation);
 
 
-        
+
+
 
 
     }
