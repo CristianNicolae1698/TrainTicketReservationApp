@@ -100,8 +100,50 @@ function show(data) {
                     .then(response => console.log(response));
 
             }
+
+            function getClientId(firstName, lastName) {
+
+                var clientDataId;
+                const body = {
+                    "FirstName": firstName,
+                    "LastName": lastName
+                };
+                fetch('https://localhost:7007/api/index/getClientId', {
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                })
+                    .then(response => response.json())
+                    .then((responseData) => clientDataId = responseData);
+
+            }
+
+            function addBooking(clientId, trainId) {
+                var bookingData;
+                const body = {
+                    "clientId": clientId,
+                    "trainId": traindId
+                };
+                fetch("https://localhost:7007/api/index/postBooking", {
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                })
+                    .then(data => data.json())
+                    .then(response => console.log(response));
+
+
+            }
+
+
             addButton.addEventListener('click', function () {
                 addItem(firstNameInput.value, lastNameInput.value);
+                getClientId(firstNameInput.value, lastNameInput.value);
+                addBooking(clientDataId, col1);
             })
 
         });

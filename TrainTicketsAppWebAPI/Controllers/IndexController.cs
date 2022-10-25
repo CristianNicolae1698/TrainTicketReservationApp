@@ -23,17 +23,7 @@ namespace TrainTicketsAppWebAPI.Controllers
 
         //this method we'll be using in the first request
 
-        [HttpPost]
-        [Route("getTrainsByRouteName")]
-        public async Task<ActionResult> GetTrainsByRouteName([FromBody] string routeName)
-        {
-            
-            List<Train> trainList = new List<Train>();
-            trainList = _unitOfWork.Routes.GetTrainsByRouteName(routeName).ToList();
-            return Ok(trainList);
-        }
-
-
+        
 
         public class RouteModel
         {
