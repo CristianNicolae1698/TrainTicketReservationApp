@@ -48,14 +48,13 @@ namespace TrainTicketsAppWebAPI.Controllers
         }
 
 
-
-
-
         public class ClientModel
         {
             public string firstName { get; set; }
             public string lastName { get; set; }
         }
+
+        
 
         //this method we'll be using in the third request
         [HttpPost]

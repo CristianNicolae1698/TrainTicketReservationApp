@@ -26,5 +26,14 @@ namespace EFDataAccessLibrary.Repositories
                 return Guid.Empty;
             }
         }
+
+        public Client ReturnClientByFLName(string firstName, string lastName)
+        {
+            var client = new Client();
+            client.FirstName = firstName;
+            client.LastName = lastName;
+            client.Id=Guid.NewGuid();
+            return client;
+        }
     }
 }

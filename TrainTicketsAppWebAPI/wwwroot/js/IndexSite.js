@@ -62,12 +62,42 @@ function show(data) {
         $(".btnSelect").on('click', function () {
             var currentRow = $(this).closest("tr");
             var col1 = currentRow.find("td:eq(0)").text();
-            /*var col2 = currentRow.find("td:eq(1)").text();*/
+            var col2 = currentRow.find("td:eq(1)").text();
             var col3 = currentRow.find("td:eq(2)").text();
             /*alert(col1 + "\n" + "\n" + col3);*/
-            var firstName = window.prompt("What is your First Name");
-            var lastName = window.prompt("What is your First Name");
-            
+            //var firstName = window.prompt("What is your First Name");
+            //var lastName = window.prompt("What is your First Name");
+
+            const modal = document.querySelector("#modal");
+            modal.showModal();
+
+            //function for posting the client to the db after filling in the form
+
+            const addButton = document.querySelector('#btnAdd');
+            const firstNameInput = document.querySelector("#firstName");
+            const lastNameInput = document.querySelector("#lastName");
+
+
+            function addItem(firstName, lastName) {
+
+                const body = {
+                    "FirstName": firstName,
+                    "LastName": lastName
+                };
+                fetch('https://localhost:7007/api/index/postClient', {
+                    method: 'POST',
+                    body: JSON.stringify(body),
+                    headers: {
+                        "content-type": "application/json"
+                    }
+                })
+                    .then(data => data.json())
+                    .then(response => console.log(response));
+
+            }
+            addButton.addEventListener('click', function () {
+                addItem(firstNameInput.value, lastNameInput.value);
+            })
 
         });
 

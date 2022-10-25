@@ -11,6 +11,7 @@ namespace DomainLibrary.Interfaces
     {
 
         public Guid GetCLientIdByName(string firstName, string lastName);
+        public Client ReturnClientByFLName(string firstName, string lastName);
 
     }
 
