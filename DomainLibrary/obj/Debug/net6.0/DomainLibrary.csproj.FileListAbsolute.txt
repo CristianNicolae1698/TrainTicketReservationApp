@@ -5,8 +5,8 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Deb
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\DomainLibrary.csproj.CoreCompileInputs.cache
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\bin\Debug\net6.0\DomainLibrary.deps.json
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\bin\Debug\net6.0\DomainLibrary.dll
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\bin\Debug\net6.0\ref\DomainLibrary.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\bin\Debug\net6.0\DomainLibrary.pdb
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\DomainLibrary.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\ref\DomainLibrary.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\DomainLibrary.pdb
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\refint\DomainLibrary.dll

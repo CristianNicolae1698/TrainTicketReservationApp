@@ -5,7 +5,6 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\o
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\EFDataAccessLibrary.csproj.CoreCompileInputs.cache
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\EFDataAccessLibrary.deps.json
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\EFDataAccessLibrary.dll
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\ref\EFDataAccessLibrary.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\EFDataAccessLibrary.pdb
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\DomainLibrary.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\DomainLibrary.pdb
@@ -15,3 +14,4 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\o
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\EFDataAccessLibrary.pdb
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\bin\Debug\net6.0\EFDataAccessLibrary.runtimeconfig.json
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\EFDataAccessLibrary.genruntimeconfig.cache
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\EFDataAccessLibrary\obj\Debug\net6.0\refint\EFDataAccessLibrary.dll

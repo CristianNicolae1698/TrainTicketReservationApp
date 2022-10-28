@@ -4,7 +4,6 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsAppWebAPI.deps.json
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsAppWebAPI.runtimeconfig.json
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsAppWebAPI.dll
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\ref\TrainTicketsAppWebAPI.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsAppWebAPI.pdb
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
@@ -92,3 +91,4 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.CodeAnalysis.Razor.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\refint\TrainTicketsAppWebAPI.dll
