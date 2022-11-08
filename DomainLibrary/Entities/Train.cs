@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DomainLibrary.Entities
 {
-    public class Train
+    public class Train : Entity
     {
-        public Guid Id { get; set; }
         
+        public List<Route> Routes { get; set; } = new List<Route>();
         public string TrainNumber { get; set; }
         public string TrainType { get; set; }
     }

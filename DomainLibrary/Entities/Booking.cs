@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace DomainLibrary.Entities
 {
-    public class Booking
+    public class Booking : Entity
     {
-        public Guid Id{ get; set; }
-        public List<Client> Clients{ get; set; }=new List<Client>();
 
-        public List<Route> Routes { get; set; }=new List<Route>();
+        public Route Route { get; set; }
 
-        public List<Train> Trains { get; set; }=new List<Train>();
+        public Train Train { get; set; }
 
-        public string BookingDate { get; set; }
+        public DateTime BookingDate { get; set; }
 
         public int Price { get; set; }
-        public bool CheckedIn { get; set; }
 
     }
 }

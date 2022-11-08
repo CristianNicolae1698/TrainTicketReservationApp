@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace DomainLibrary.Entities
 {
-    public class Client
+    public class Client : Entity
     {
-        public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set;}
+
+        public List<Booking> Bookings { get; set; } = new List<Booking>();
+
     }
 }

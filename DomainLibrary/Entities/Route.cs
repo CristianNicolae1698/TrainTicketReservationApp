@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace DomainLibrary.Entities
 {
-    public class Route
+    public class Route : Entity
     {
-        public Guid Id { get; set; }
         public string RouteName { get; set; }
 
         public List<Station> Stations { get; set; }=new List<Station>();
         public List<Train> Trains { get; set; }=new List<Train>();
 
         
-        public int StationOrder { get; set; }
 
 
     }

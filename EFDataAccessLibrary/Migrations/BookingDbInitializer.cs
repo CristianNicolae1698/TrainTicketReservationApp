@@ -30,9 +30,15 @@ namespace EFDataAccessLibrary.Migrations
                 new Train{Id=Guid.NewGuid(),TrainNumber="456", TrainType="Regio-CtBuc"},
                 new Train{Id=Guid.NewGuid(),TrainNumber="567", TrainType="InterRegio-CtBuc"},
                 new Train{Id=Guid.NewGuid(),TrainNumber="678", TrainType="InterCity-CtBuc"},
-                new Train{Id=Guid.NewGuid(),TrainNumber="789", TrainType="Regio-SbBuc"},
-                new Train{Id=Guid.NewGuid(),TrainNumber="901", TrainType="InterRegio-SbBuc"},
-                new Train{Id=Guid.NewGuid(),TrainNumber="124", TrainType="InterCity-SbBuc"},
+                new Train{Id=Guid.NewGuid(),TrainNumber="789", TrainType="Regio-BvBuc"},
+                new Train{Id=Guid.NewGuid(),TrainNumber="901", TrainType="InterRegio-BvBuc"},
+                new Train{Id=Guid.NewGuid(),TrainNumber="124", TrainType="InterCity-BvBuc"},
+                new Train{Id=Guid.NewGuid(),TrainNumber="421", TrainType="Regio-BvCt"},
+                new Train{Id=Guid.NewGuid(),TrainNumber="375", TrainType="InterRegio-BvCt"},
+                new Train{Id=Guid.NewGuid(),TrainNumber="753", TrainType="InterCity-BvCt"},
+                new Train{Id=Guid.NewGuid(),TrainNumber="357", TrainType="Regio-CtCv"},
+                new Train{Id=Guid.NewGuid(),TrainNumber="579", TrainType="InterRegio-CtCv"},
+                new Train{Id=Guid.NewGuid(),TrainNumber="246", TrainType="InterCity-CtCv"}
                
             };
             
@@ -46,7 +52,7 @@ namespace EFDataAccessLibrary.Migrations
             {
                 new Station{Id=Guid.NewGuid(),StationName="Bucuresti"},
                 new Station{Id=Guid.NewGuid(),StationName="Craiova"},
-                new Station{Id=Guid.NewGuid(),StationName="Sibiu"},
+                new Station{Id=Guid.NewGuid(),StationName="Brasov"},
                 new Station{Id=Guid.NewGuid(),StationName="Constanta"}
 
             };
@@ -58,7 +64,6 @@ namespace EFDataAccessLibrary.Migrations
             var route1 = new Route
             { 
                 RouteName = $"{stationList[0].StationName} - {stationList[1].StationName}",
-                StationOrder = 7563525
             };
             Station stationArrival1 = context.Stations.First(s => s.StationName == stationList[0].StationName);
             route1.Stations.Add(stationArrival1);
@@ -75,7 +80,6 @@ namespace EFDataAccessLibrary.Migrations
             var route2 = new Route
             {
                 RouteName = $"{stationList[3].StationName} - {stationList[0].StationName}",
-                StationOrder = 7563525
             };
             Station stationArrival2 = context.Stations.First(s => s.StationName == stationList[3].StationName);
             route2.Stations.Add(stationArrival2);
@@ -92,7 +96,6 @@ namespace EFDataAccessLibrary.Migrations
             var route3 = new Route
             {
                 RouteName = $"{stationList[2].StationName} - {stationList[0].StationName}",
-                StationOrder = 52434177,
             };
             Station stationArrival3 = context.Stations.First(s => s.StationName == stationList[2].StationName);
             route3.Stations.Add(stationArrival3);
@@ -107,8 +110,45 @@ namespace EFDataAccessLibrary.Migrations
             context.Routes.Add(route3);
             context.SaveChanges();
 
+            var route4 = new Route
+            {
+                RouteName = $"{stationList[2].StationName} - {stationList[3].StationName}",
+            };
+            Station stationArrival4 = context.Stations.First(s => s.StationName == stationList[2].StationName);
+            route4.Stations.Add(stationArrival3);
+            Station stationDeparture4 = context.Stations.First(s => s.StationName == stationList[0].StationName);
+            route4.Stations.Add(stationDeparture3);
+            Train train1R4 = context.Trains.First(t => t.TrainType == trainList[9].TrainType);
+            route4.Trains.Add(train1R4);
+            route2.Trains.Add(train1R4);
+            Train train2R4 = context.Trains.First(t => t.TrainType == trainList[10].TrainType);
+            route4.Trains.Add(train2R4);
+            route2.Trains.Add(train2R4);
+            Train train3R4 = context.Trains.First(t => t.TrainType == trainList[11].TrainType);
+            route4.Trains.Add(train3R4);
+            route2.Trains.Add(train3R4);
+            context.Routes.Add(route4);
+            context.SaveChanges();
 
-            
+            var route5 = new Route
+            {
+                RouteName = $"{stationList[3].StationName} - {stationList[1].StationName}",
+            };
+            Station stationArrival5 = context.Stations.First(s => s.StationName == stationList[2].StationName);
+            route5.Stations.Add(stationArrival3);
+            Station stationDeparture5 = context.Stations.First(s => s.StationName == stationList[0].StationName);
+            route5.Stations.Add(stationDeparture3);
+            Train train1R5 = context.Trains.First(t => t.TrainType == trainList[12].TrainType);
+            route5.Trains.Add(train1R5);
+            Train train2R5 = context.Trains.First(t => t.TrainType == trainList[13].TrainType);
+            route5.Trains.Add(train2R5);
+            Train train3R5 = context.Trains.First(t => t.TrainType == trainList[14].TrainType);
+            route5.Trains.Add(train3R5);
+            context.Routes.Add(route5);
+            context.SaveChanges();
+
+
+
 
 
 

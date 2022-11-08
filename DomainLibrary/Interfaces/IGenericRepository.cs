@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DomainLibrary.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DomainLibrary.Interfaces
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<T> where T : Entity
     {
         T GetById(Guid id);
         IEnumerable<T> GetAll();

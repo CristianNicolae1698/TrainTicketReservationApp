@@ -34,6 +34,7 @@ namespace TrainTicketsAppWebAPI
             #endregion
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            services.AddAutoMapper(typeof(Program).Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

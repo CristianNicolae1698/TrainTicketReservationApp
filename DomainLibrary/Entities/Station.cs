@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace DomainLibrary.Entities
 {
-    public class Station
+    public class Station : Entity
     {
-        public Guid Id { get; set; }
         public string StationName { get; set; }
 
         public List<Route> Routes { get; set;}=new List<Route>();

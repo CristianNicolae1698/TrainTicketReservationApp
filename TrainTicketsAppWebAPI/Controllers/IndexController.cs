@@ -77,7 +77,8 @@ namespace TrainTicketsAppWebAPI.Controllers
 
 
 
-        
+          
+
         public class ClientTrainModel
         {
             public Guid clientId { get; set; }
@@ -92,7 +93,7 @@ namespace TrainTicketsAppWebAPI.Controllers
         {
             var booking = _unitOfWork.Bookings.CreateBooking(model.clientId, model.trainId);
             booking.Price = 47864124;
-            booking.BookingDate = DateTime.Today.ToString();
+            booking.BookingDate = DateTime.Today;
             _unitOfWork.Bookings.Add(booking);
             _unitOfWork.Complete();
             return Ok();

@@ -26,7 +26,7 @@ const TrainPage = () =>{
         "DepartureStation": departureStation,
         "ArrivalStation": arrivalStation
     };
-    const response = await fetch('https://localhost:7007/api/index/getTrainsByRoute', {
+        const response = await fetch('https://trainticketsapi.azurewebsites.net/api/index/getTrainsByRoute', {
         method: 'POST',
         body: JSON.stringify(body),
         headers: {
@@ -42,7 +42,7 @@ const TrainPage = () =>{
             "FirstName": firstName,
             "LastName": lastName
         };
-        fetch('https://localhost:7007/api/index/postClient', {
+        fetch('https://trainticketsapi.azurewebsites.net/api/index/postClient', {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
@@ -59,7 +59,7 @@ const TrainPage = () =>{
             "FirstName": firstName,
             "LastName": lastName
         };
-        fetch('https://localhost:7007/api/index/getClientId', {
+        fetch('https://trainticketsapi.azurewebsites.net/api/index/getClientId', {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
@@ -84,7 +84,7 @@ const TrainPage = () =>{
             "clientId": token,
             "trainId": item.id
         };
-        fetch("https://localhost:7007/api/index/postBooking", {
+        fetch("https://trainticketsapi.azurewebsites.net/api/index/postBooking", {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {

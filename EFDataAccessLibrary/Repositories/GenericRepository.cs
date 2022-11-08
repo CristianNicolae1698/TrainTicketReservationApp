@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using DomainLibrary.Interfaces;
 using System.Linq.Expressions;
+using DomainLibrary.Entities;
 
 namespace EFDataAccessLibrary.Repositories
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T> where T : Entity
     {
         protected readonly BookingContext _context;
         public GenericRepository(BookingContext context)
@@ -20,7 +21,8 @@ namespace EFDataAccessLibrary.Repositories
         }
         public void Add(T entity)
         {
-            _context.Set<T>().Add(entity);
+                _context.Set<T>().Add(entity);
+      
         }
         public void AddRange(IEnumerable<T> entities)
         {
