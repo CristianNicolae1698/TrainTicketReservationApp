@@ -20,8 +20,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DomainLibrary\DomainLibrary.csproj" />
-    <ProjectReference Include="..\EFDataAccessLibrary\EFDataAccessLibrary.csproj" />
+    <ProjectReference Include="..\DomainLibrary\TrainTicketsApp.Core.csproj" />
+    <ProjectReference Include="..\EFDataAccessLibrary\TrainTicketsApp.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

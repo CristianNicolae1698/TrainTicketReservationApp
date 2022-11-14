@@ -4,12 +4,12 @@
     "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\EFDataAccessLibrary\\EFDataAccessLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\DomainLibrary.csproj": {
+    "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\TrainTicketsApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\DomainLibrary.csproj",
-        "projectName": "DomainLibrary",
-        "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\DomainLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\TrainTicketsApp.Core.csproj",
+        "projectName": "TrainTicketsApp.Core",
+        "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\TrainTicketsApp.Core.csproj",
         "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\obj\\",
         "projectStyle": "PackageReference",
@@ -93,8 +93,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\DomainLibrary.csproj": {
-                "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\DomainLibrary.csproj"
+              "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\TrainTicketsApp.Core.csproj": {
+                "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\TrainTicketsApp.Core.csproj"
               }
             }
           }

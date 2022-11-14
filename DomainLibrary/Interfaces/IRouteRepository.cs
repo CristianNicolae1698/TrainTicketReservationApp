@@ -12,9 +12,12 @@ namespace DomainLibrary.Interfaces
     {
        
 
-        public IEnumerable<Train> GetTrainsByRoute(string arrivalStation, string departureStation);
+        
+        public IEnumerable<Train> GetTrainsByStations(Station departureStation, Station arrivalStation);
 
+        public IEnumerable<Train> GetTrainsByStationsName(string departureStation, string arrivalStation);
 
+        public Guid GetRouteIdByStationsName(string departureStation, string arrivalStation);
 
 
 

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\DomainLibrary.csproj",
-      "projectName": "DomainLibrary",
-      "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\DomainLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\TrainTicketsApp.Core.csproj",
+      "projectName": "TrainTicketsApp.Core",
+      "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\TrainTicketsApp.Core.csproj",
       "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\obj\\",
       "projectStyle": "PackageReference",

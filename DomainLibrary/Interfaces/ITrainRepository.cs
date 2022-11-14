@@ -9,8 +9,6 @@ namespace DomainLibrary.Interfaces
 {
     public interface ITrainRepository :IGenericRepository<Train>
     {
-        public IEnumerable<Train> GetTrainsByRouteName(string routeName);
         
-        public Train GetFirstTrainFromRouteName(string routeName);
     }
 }

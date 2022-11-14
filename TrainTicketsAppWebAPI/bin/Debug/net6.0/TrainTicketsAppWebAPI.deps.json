@@ -9,14 +9,14 @@
       "TrainTicketsAppWebAPI/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
-          "DomainLibrary": "1.0.0",
-          "EFDataAccessLibrary": "1.0.0",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.10",
           "Microsoft.AspNetCore.Mvc.Razor.ViewCompilation": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.9",
           "Microsoft.Extensions.Hosting": "6.0.1",
-          "Swashbuckle.AspNetCore": "6.2.3"
+          "Swashbuckle.AspNetCore": "6.2.3",
+          "TrainTicketsApp.Core": "1.0.0",
+          "TrainTicketsApp.Infrastructure": "1.0.0"
         },
         "runtime": {
           "TrainTicketsAppWebAPI.dll": {}
@@ -1866,23 +1866,23 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
-      "DomainLibrary/1.0.0": {
+      "TrainTicketsApp.Core/1.0.0": {
         "runtime": {
-          "DomainLibrary.dll": {}
+          "TrainTicketsApp.Core.dll": {}
         }
       },
-      "EFDataAccessLibrary/1.0.0": {
+      "TrainTicketsApp.Infrastructure/1.0.0": {
         "dependencies": {
-          "DomainLibrary": "1.0.0",
           "EntityFramework": "6.4.4",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.9",
           "Microsoft.EntityFrameworkCore": "6.0.9",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9",
+          "TrainTicketsApp.Core": "1.0.0"
         },
         "runtime": {
-          "EFDataAccessLibrary.dll": {}
+          "TrainTicketsApp.Infrastructure.dll": {}
         }
       }
     }
@@ -3342,12 +3342,12 @@
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
     },
-    "DomainLibrary/1.0.0": {
+    "TrainTicketsApp.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "EFDataAccessLibrary/1.0.0": {
+    "TrainTicketsApp.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

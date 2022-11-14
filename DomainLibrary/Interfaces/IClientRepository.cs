@@ -10,8 +10,11 @@ namespace DomainLibrary.Interfaces
     public interface IClientRepository:IGenericRepository<Client>
     {
 
-        public Guid GetCLientIdByName(string firstName, string lastName);
-        public Client ReturnClientByFLName(string firstName, string lastName);
+        public void PostClientIfNotExist(Client client);
+
+        public Guid GetCLientIdByNameDto(Client client);
+
+
 
     }
 

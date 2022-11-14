@@ -9,10 +9,10 @@ namespace DomainLibrary.Interfaces
 {
     public interface IBookingRepository:IGenericRepository<Booking>
     {
-        public Booking CreateBooking(Guid clientId, Guid trainId);
 
-        public Booking AddClientToBooking(Client client);
+        public Booking PostBooking(Guid clientId, Guid trainId, Guid routeId);
 
-        public Booking AddClientAndTrainToBooking(Client client, Train train);
+        public IEnumerable<Booking> DisplayBookingsByClientId(Guid clientId);
+
     }
 }

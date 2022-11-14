@@ -57,10 +57,6 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\TrainTicketsAppWebAPI.genruntimeconfig.cache
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Humanizer.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\DomainLibrary.dll
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\EFDataAccessLibrary.dll
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\DomainLibrary.pdb
-C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\EFDataAccessLibrary.pdb
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\TrainTicketsAppWebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsAppWebAPI.staticwebassets.runtime.json
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\EntityFramework.SqlServer.dll
@@ -94,3 +90,7 @@ C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\obj\Debug\net6.0\refint\TrainTicketsAppWebAPI.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsApp.Core.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsApp.Infrastructure.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsApp.Core.pdb
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\TrainTicketsAppWebAPI\bin\Debug\net6.0\TrainTicketsApp.Infrastructure.pdb

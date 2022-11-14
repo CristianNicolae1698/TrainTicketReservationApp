@@ -1,0 +1,12 @@
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\bin\Debug\net6.0\TrainTicketsApp.Core.deps.json
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\bin\Debug\net6.0\TrainTicketsApp.Core.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\bin\Debug\net6.0\TrainTicketsApp.Core.pdb
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\TrainTicketsApp.Core.csproj.AssemblyReference.cache
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\TrainTicketsApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\TrainTicketsApp.Core.AssemblyInfoInputs.cache
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\TrainTicketsApp.Core.AssemblyInfo.cs
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\TrainTicketsApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\TrainTicketsApp.Core.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\refint\TrainTicketsApp.Core.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\TrainTicketsApp.Core.pdb
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\DomainLibrary\obj\Debug\net6.0\ref\TrainTicketsApp.Core.dll

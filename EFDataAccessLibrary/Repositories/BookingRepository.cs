@@ -1,4 +1,6 @@
 ﻿using DomainLibrary.Entities;
+using Microsoft.EntityFrameworkCore;
+
 using DomainLibrary.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -16,35 +18,29 @@ namespace EFDataAccessLibrary.Repositories
         }
 
 
-        public Booking CreateBooking(Guid clientId, Guid trainId)
+        public Booking PostBooking(Guid clientId, Guid trainId, Guid routeId)
         {
             var booking = new Booking();
             
-            if (_context.Trains.First(c => c.Id == trainId) != null)
-            {
-                Train train = _context.Trains.First(t => t.Id == trainId);
-                booking.Train=train;
-            }
+            booking.Train = _context.Trains.First(t => t.Id == trainId);
+            booking.Route = _context.Routes.First(r => r.Id == routeId);
+            _context.Clients.First(c => c.Id == clientId).Bookings.Add(booking);
+            Random rd = new Random();
+            booking.Price = rd.Next(100, 200);
+            booking.BookingDate = DateTime.UtcNow;
+            
             return booking;
 
         }
+        
 
-        public Booking AddClientToBooking(Client client)
+        public IEnumerable<Booking> DisplayBookingsByClientId(Guid clientId)
         {
-            var booking = new Booking();
-            //booking.Clients.Add(client);
-            return booking;
-
+            return _context.Bookings.Include(t => t.Train).Include(r => r.Route).Where(c => c.Client.Id == clientId).ToList();
+            
         }
 
-        public Booking AddClientAndTrainToBooking(Client client, Train train)
-        {
-            var booking = new Booking();
-            //booking.Trains.Add(train);
-            //booking.Clients.Add(client);
-            return booking;
-
-        }
+        
 
     }
 }

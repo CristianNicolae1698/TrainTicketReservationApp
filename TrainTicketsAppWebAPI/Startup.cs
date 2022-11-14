@@ -1,10 +1,8 @@
 ﻿using DomainLibrary.Interfaces;
 using EFDataAccessLibrary;
-using EFDataAccessLibrary.Migrations;
 using EFDataAccessLibrary.Repositories;
-using EFDataAccessLibrary.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc.NewtonsoftJson;
+using TrainTicketsAppWebAPI.Managers;
 
 namespace TrainTicketsAppWebAPI
 {
@@ -31,8 +29,12 @@ namespace TrainTicketsAppWebAPI
             services.AddTransient<IRouteRepository, RouteRepository>();
             services.AddTransient<IStationRepository, StationRepository>();
             services.AddTransient<ITrainRepository, TrainRepository>();
+            services.AddTransient<IBookingRepository, BookingRepository>();
             #endregion
-            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddTransient<IBookingManager, BookingManager>();
+            services.AddTransient<IClientManager, ClientManager>();
+            services.AddTransient<IRouteManager, RouteManager>();
+            services.AddTransient<ITrainManager, TrainManager>();
             services.AddControllersWithViews().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddAutoMapper(typeof(Program).Assembly);
         }

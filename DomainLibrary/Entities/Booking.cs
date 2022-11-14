@@ -13,6 +13,9 @@ namespace DomainLibrary.Entities
 
         public Train Train { get; set; }
 
+
+        public Client Client { get; set; }
+
         public DateTime BookingDate { get; set; }
 
         public int Price { get; set; }

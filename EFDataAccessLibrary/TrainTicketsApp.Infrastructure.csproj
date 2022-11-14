@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DomainLibrary\DomainLibrary.csproj" />
+    <ProjectReference Include="..\DomainLibrary\TrainTicketsApp.Core.csproj" />
   </ItemGroup>
 
 </Project>

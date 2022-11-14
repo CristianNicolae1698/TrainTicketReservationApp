@@ -3,7 +3,7 @@ import { useState } from "react"
 import React from 'react'
 
 
-const TrainPage = () =>{
+const TrainPage = () => {
 
     const [token, setToken] = useState('')
     const [departureStation, setDepartureStation] = useState('')
@@ -12,29 +12,42 @@ const TrainPage = () =>{
     const [isLoading, setIsLoading] = useState(false)
     const [openRegister, setOpenRegister] = useState(false);
     const [openLogin, setOpenLogin] = useState(false);
-    
+    const [openDisplayBookings, setOpenDisplayBookings] = useState(false);
+    const [routeId, setRouteId] = useState([])
+
     const [selectedTrain, setSelectedTrain] = useState({})
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
 
+    const [bookings, setBookings] = useState([])
 
-    const handleSubmit = async (event) =>{
+
+    const handleSubmit = async (event) => {
         setIsLoading(true)
         event.preventDefault();
         let data;
-    const body = {
-        "DepartureStation": departureStation,
-        "ArrivalStation": arrivalStation
-    };
-        const response = await fetch('https://trainticketsapi.azurewebsites.net/api/index/getTrainsByRoute', {
-        method: 'POST',
-        body: JSON.stringify(body),
-        headers: {
-            "content-type": "application/json"
-        }
-    }).then(response => response.json())
-        .then((responseData) => setTrains(responseData) );
-    setIsLoading(false);
+        const body = {
+            "DepartureStation": departureStation,
+            "ArrivalStation": arrivalStation
+        };
+        const responseTrains = await fetch('https://localhost:7007/api/route/getTrainsByStationsName', {
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: {
+                "content-type": "application/json"
+            }
+        }).then(responseTrains => responseTrains.json())
+            .then((responseTrainsData) => setTrains(responseTrainsData));
+        setIsLoading(false);
+        const responseRoute = await fetch('https://localhost:7007/api/route/getRouteIdByStationsName', {
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: {
+                "content-type": "application/json"
+            }
+        }).then(responseRoute => responseRoute.json())
+            .then((responseRouteData) => setRouteId(responseRouteData));
+
 
     }
     const handleSubmitRegister = () => {
@@ -42,7 +55,7 @@ const TrainPage = () =>{
             "FirstName": firstName,
             "LastName": lastName
         };
-        fetch('https://trainticketsapi.azurewebsites.net/api/index/postClient', {
+        fetch('https://localhost:7007/api/client/postClientDto', {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
@@ -51,7 +64,7 @@ const TrainPage = () =>{
         })
             .then(data => data.json())
             .then(response => console.log(response));
-       
+        setOpenRegister(false)
     }
 
     const handleSubmitLogin = () => {
@@ -59,7 +72,7 @@ const TrainPage = () =>{
             "FirstName": firstName,
             "LastName": lastName
         };
-        fetch('https://trainticketsapi.azurewebsites.net/api/index/getClientId', {
+        fetch('https://localhost:7007/api/client/returnClientIdDto', {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
@@ -67,24 +80,30 @@ const TrainPage = () =>{
             }
         })
             .then(response => response.json())
-            .then((responseData) => {setToken(responseData)});
+            .then((responseData) => { setToken(responseData) });
         console.log(token)
         setOpenLogin(false)
 
     }
     const handleClose = () => {
-        
-        
+
+
         setFirstName('')
         setLastName('')
+        setOpenLogin(false)
+        setOpenRegister(false)
+        setOpenDisplayBookings(false)
+
+
     }
     const handleSelect = (item) => {
-        
+
         const body = {
             "clientId": token,
-            "trainId": item.id
+            "trainId": item.id,
+            "routeId": routeId
         };
-        fetch("https://trainticketsapi.azurewebsites.net/api/index/postBooking", {
+        fetch("https://localhost:7007/api/booking/postBooking", {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
@@ -93,88 +112,140 @@ const TrainPage = () =>{
         })
             .then(data => data.json())
             .then(response => console.log(response));
+        alert("Your booking has been submitted");
 
 
     }
 
-    return(
+    const handleDisplaybookings = () => {
+
+
+        const body = {
+            token
+        };
+        const responseBookings = fetch('https://localhost:7007/api/booking/DisplayBookingsByClientId', {
+            method: 'POST',
+            body: JSON.stringify(body),
+            headers: {
+                "content-type": "application/json"
+            }
+        }).then(responseBookings => responseBookings.json())
+            .then((responseBookingsData) => setBookings(responseBookingsData));
+        setOpenDisplayBookings(false)
+
+
+
+
+    }
+
+
+
+
+
+    return (
         <>
-        <div class="container">
-            <button onClick={() => setOpenLogin(true)}>SignIn</button>
-            <button onClick={ ()=> setOpenRegister()} >Register</button>
-        <div class="routes_sidebar">
-            <form >
-            <input onChange={(e)=> setDepartureStation(e.target.value)} type="text" id="departureStation" placeholder="Departure Station"/>
-            <input onChange={(e)=> setArrivalStation(e.target.value)} type="text" id="arrivalStation" placeholder="Arrival Station" />
-            <button onClick={handleSubmit}type="submit" id="btnSearch">Search</button>
-            </form>
-        </div>
-        <div class="routes_container">
-        </div>
-    </div>
-    <div class="d-flex justify-content-center">
-        {isLoading ? <div class="spinner-border"
-             role="status" id="loading">
-            <span class="sr-only">Loading...</span>
-        </div> : null}
-        
-    </div>
-    <h1>Trains for Specified Route</h1>
-    <Dialog
-        open={openRegister}
-        keepMounted
-        aria-describedby="alert-dialog-slide-description"
-      >
-        <DialogTitle>{"Use Google's location service?"}</DialogTitle>
-        <DialogContent>
-        <form class="form" method="dialog">
-            <div><label>Your First Name </label><input onChange={(e)=> setFirstName(e.target.value)} type="text"/></div>
-            
-            <label>Your Last Name</label> <input onChange={(e)=> setLastName(e.target.value)} type="text" id="lastName"/>
-        </form>
-        </DialogContent>
-        <DialogActions>
-        <Button onClick={handleClose}>Close</Button>
-        <Button onClick={() => handleSubmitRegister()}>Register</Button>
-        </DialogActions>
-      </Dialog>
-      <Dialog
-        open={openLogin}
-        keepMounted
-        aria-describedby="alert-dialog-slide-description"
-      >
-        <DialogTitle>{"Use Google's location service?"}</DialogTitle>
-        <DialogContent>
-        <form class="form" method="dialog">
-            <div><label>Your First Name </label><input onChange={(e)=> setFirstName(e.target.value)} type="text"/></div>
-            
-            <label>Your Last Name</label> <input onChange={(e)=> setLastName(e.target.value)} type="text" id="lastName"/>
-        </form>
-        </DialogContent>
-        <DialogActions>
-        <Button onClick={handleClose}>Close</Button>
-        <Button onClick={() => handleSubmitLogin()}>Login</Button>
-        </DialogActions>
-      </Dialog>
-    <table id="trains">
-        <tr>
-    
-          <th>Train Number</th>
-          <th>Train Type</th>
-           
-         </tr>
-         {trains ? trains.map((item) => <tr>
-    <td>{item.trainNumber}</td>
-    <td>{item.trainType}</td>
-    <td><button onClick={() => handleSelect(item)}>Select</button></td>
+            <div class="container">
+                <button onClick={() => setOpenLogin(true)}>SignIn</button>
+                <button onClick={() => setOpenRegister(true)} >Register</button>
+                <button onClick={() => setOpenDisplayBookings(true)} >Display Your Bookings</button>
+                <div class="routes_sidebar">
+                    <form >
+                        <input onChange={(e) => setDepartureStation(e.target.value)} type="text" id="departureStation" placeholder="Departure Station" />
+                        <input onChange={(e) => setArrivalStation(e.target.value)} type="text" id="arrivalStation" placeholder="Arrival Station" />
+                        <button onClick={handleSubmit} type="submit" id="btnSearch">Search</button>
+                    </form>
+                </div>
+                <div class="routes_container">
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                {isLoading ? <div class="spinner-border"
+                    role="status" id="loading">
+                    <span class="sr-only">Loading...</span>
+                </div> : null}
 
-    </tr>) : null}
-         </table>
+            </div>
+            <h1>Trains for Specified Route</h1>
+            <Dialog
+                open={openRegister}
+                keepMounted
+                aria-describedby="alert-dialog-slide-description"
+            >
+                <DialogTitle>Fill in the blank fields with your credentials</DialogTitle>
+                <DialogContent>
+                    <form class="form" method="dialog">
+                        <div><label>Your First Name </label><input onChange={(e) => setFirstName(e.target.value)} type="text" /></div>
 
-    <dialog class="modal" id="modal">
-        
+                        <label>Your Last Name</label> <input onChange={(e) => setLastName(e.target.value)} type="text" id="lastName" />
+                    </form>
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={handleClose}>Close</Button>
+                    <Button onClick={() => handleSubmitRegister()}>Register</Button>
+                </DialogActions>
+            </Dialog>
+            <Dialog
+                open={openLogin}
+                keepMounted
+                aria-describedby="alert-dialog-slide-description"
+            >
+                <DialogTitle>Fill in the blank fields with your credentials</DialogTitle>
+                <DialogContent>
+                    <form class="form" method="dialog">
+                        <div><label>Your First Name </label><input onChange={(e) => setFirstName(e.target.value)} type="text" /></div>
 
-    </dialog>
-    </>
+                        <label>Your Last Name</label> <input onChange={(e) => setLastName(e.target.value)} type="text" id="lastName" />
+                    </form>
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={handleClose}>Close</Button>
+                    <Button onClick={() => handleSubmitLogin()}>Login</Button>
+                </DialogActions>
+            </Dialog>
+            <Dialog
+                open={openDisplayBookings}
+                keepMounted
+                aria-describedby="alert-dialog-slide-description"
+            >
+                <DialogTitle>These are your bookings</DialogTitle>
+                <DialogContent>
+                    <table id="bookings">
+                        <tr>
+                            <th>Booking Date</th>
+                            <th>Booking Price</th>
+                        </tr>
+
+                        {bookings ? bookings.map((bookingItem) => <tr>
+                            <td>{bookingItem.bookingDate}</td>
+                            <td>{bookingItem.bookingPrice}</td>
+                        </tr>) : null}
+
+                    </table>
+                </DialogContent>
+                <Button onClick={handleClose}>Close</Button>
+            </Dialog>
+
+
+
+            <table id="trains">
+                <tr>
+
+                    <th>Train Number</th>
+                    <th>Train Type</th>
+
+                </tr>
+                {trains ? trains.map((item) => <tr>
+                    <td>{item.trainNumber}</td>
+                    <td>{item.trainType}</td>
+                    <td><button onClick={() => handleSelect(item)}>Select</button></td>
+
+                </tr>) : null}
+            </table>
+
+            <dialog class="modal" id="modal">
+
+
+            </dialog>
+        </>
     );
 }; export default TrainPage

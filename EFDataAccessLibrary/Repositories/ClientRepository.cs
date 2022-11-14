@@ -15,25 +15,30 @@ namespace EFDataAccessLibrary.Repositories
 
         }
 
-        public Guid GetCLientIdByName(string firstName, string lastName)
+        public void PostClientIfNotExist(Client client)
         {
-            if (_context.Clients.First(c => c.FirstName == firstName && c.LastName == lastName) != null)
+            
+            if(_context.Clients.Any(c=>c.FirstName==client.FirstName && c.LastName == client.LastName))
             {
-                return _context.Clients.First(c => c.FirstName == firstName && c.LastName == lastName).Id;
+                throw new Exception("Client Already Exists");
             }
             else
             {
-                return Guid.Empty;
+                _context.Clients.Add(client);
+                
             }
+        } 
+
+       
+
+        public Guid GetCLientIdByNameDto(Client client)
+        {
+            
+            return _context.Clients.First(c => c.FirstName == client.FirstName && c.LastName == client.LastName).Id;
+            
         }
 
-        public Client ReturnClientByFLName(string firstName, string lastName)
-        {
-            var client = new Client();
-            client.FirstName = firstName;
-            client.LastName = lastName;
-            client.Id=Guid.NewGuid();
-            return client;
-        }
+
+        
     }
 }

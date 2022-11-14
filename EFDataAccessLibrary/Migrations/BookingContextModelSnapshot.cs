@@ -31,7 +31,7 @@ namespace EFDataAccessLibrary.Migrations
                     b.Property<DateTime>("BookingDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid?>("ClientId")
+                    b.Property<Guid>("ClientId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
@@ -367,9 +367,11 @@ namespace EFDataAccessLibrary.Migrations
 
             modelBuilder.Entity("DomainLibrary.Entities.Booking", b =>
                 {
-                    b.HasOne("DomainLibrary.Entities.Client", null)
+                    b.HasOne("DomainLibrary.Entities.Client", "Client")
                         .WithMany("Bookings")
-                        .HasForeignKey("ClientId");
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("DomainLibrary.Entities.Route", "Route")
                         .WithMany()
@@ -382,6 +384,8 @@ namespace EFDataAccessLibrary.Migrations
                         .HasForeignKey("TrainId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Client");
 
                     b.Navigation("Route");
 

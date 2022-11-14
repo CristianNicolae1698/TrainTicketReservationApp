@@ -1018,14 +1018,14 @@
           }
         }
       },
-      "DomainLibrary/1.0.0": {
+      "TrainTicketsApp.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/DomainLibrary.dll": {}
+          "bin/placeholder/TrainTicketsApp.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DomainLibrary.dll": {}
+          "bin/placeholder/TrainTicketsApp.Core.dll": {}
         }
       }
     }
@@ -2679,22 +2679,22 @@
         "version.txt"
       ]
     },
-    "DomainLibrary/1.0.0": {
+    "TrainTicketsApp.Core/1.0.0": {
       "type": "project",
-      "path": "../DomainLibrary/DomainLibrary.csproj",
-      "msbuildProject": "../DomainLibrary/DomainLibrary.csproj"
+      "path": "../DomainLibrary/TrainTicketsApp.Core.csproj",
+      "msbuildProject": "../DomainLibrary/TrainTicketsApp.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DomainLibrary >= 1.0.0",
       "EntityFramework >= 6.4.4",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.9",
       "Microsoft.EntityFrameworkCore >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.9",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
+      "TrainTicketsApp.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2704,9 +2704,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\EFDataAccessLibrary\\EFDataAccessLibrary.csproj",
-      "projectName": "EFDataAccessLibrary",
-      "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\EFDataAccessLibrary\\EFDataAccessLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\EFDataAccessLibrary\\TrainTicketsApp.Infrastructure.csproj",
+      "projectName": "TrainTicketsApp.Infrastructure",
+      "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\EFDataAccessLibrary\\TrainTicketsApp.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\EFDataAccessLibrary\\obj\\",
       "projectStyle": "PackageReference",
@@ -2730,8 +2730,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\DomainLibrary.csproj": {
-              "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\DomainLibrary.csproj"
+            "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\TrainTicketsApp.Core.csproj": {
+              "projectPath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\DomainLibrary\\TrainTicketsApp.Core.csproj"
             }
           }
         }
