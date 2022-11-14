@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "deb562a4-62c4-4604-a180-ff01e1df499b": {
+      "ProjectGuid": "deb562a4-62c4-4604-a180-ff01e1df499b",
+      "DisplayName": "BookTrainTicketsConsoleApp",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "21aaed39-1783-4675-951b-1d2da4275c73": {
+      "ProjectGuid": "21aaed39-1783-4675-951b-1d2da4275c73",
+      "DisplayName": "TrainTicketAppWebAPI",
+      "ColorIndex": 1
+    },
+    "acdf6ccf-c942-4469-8688-66986e46353b": {
+      "ProjectGuid": "acdf6ccf-c942-4469-8688-66986e46353b",
+      "DisplayName": "TrainTicketWebAPI",
+      "ColorIndex": 2
+    },
+    "d7f8a6f7-bbaa-42cd-89f7-38796c947865": {
+      "ProjectGuid": "d7f8a6f7-bbaa-42cd-89f7-38796c947865",
+      "DisplayName": "WebApplication1",
+      "ColorIndex": 3
+    },
+    "c6977095-d8e8-4b30-83eb-fb1522bf1449": {
+      "ProjectGuid": "c6977095-d8e8-4b30-83eb-fb1522bf1449",
+      "DisplayName": "TrainTicketAppWeb",
+      "ColorIndex": 4
+    },
+    "56a0f3a5-a4e6-46f3-96f2-f289f8344381": {
+      "ProjectGuid": "56a0f3a5-a4e6-46f3-96f2-f289f8344381",
+      "DisplayName": "TrainTicketsAppWebAPI",
+      "ColorIndex": 5
+    },
+    "e6eefc35-85af-4160-a9c2-3603d9c4ff94": {
+      "ProjectGuid": "e6eefc35-85af-4160-a9c2-3603d9c4ff94",
+      "DisplayName": "EFDataAccessLibrary",
+      "ColorIndex": 6
+    },
+    "d5659e01-880c-4768-ba4f-2340cbcc45e7": {
+      "ProjectGuid": "d5659e01-880c-4768-ba4f-2340cbcc45e7",
+      "DisplayName": "DomainLibrary",
+      "ColorIndex": 7
+    },
+    "24ccb597-a0c0-4c04-b482-d79e5695572b": {
+      "ProjectGuid": "24ccb597-a0c0-4c04-b482-d79e5695572b",
+      "DisplayName": "TestApp",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}

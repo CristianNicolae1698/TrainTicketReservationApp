@@ -1,0 +1,131 @@
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\BookTrainTickets.exe
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\BookTrainTickets.deps.json
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\BookTrainTickets.runtimeconfig.json
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\BookTrainTickets.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\ref\BookTrainTickets.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\BookTrainTickets.pdb
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Humanizer.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.csproj.AssemblyReference.cache
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.AssemblyInfoInputs.cache
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.AssemblyInfo.cs
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.csproj.CoreCompileInputs.cache
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.csproj.CopyComplete
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\obj\Debug\net6.0\ref\BookTrainTickets.dll
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.pdb
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.genruntimeconfig.cache
+C:\Users\crist\Documents\Visual Studio 2022\repos\BookTrainTicketsApp\BookTrainTickets\bin\Debug\net6.0\appsettings.json
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\appsettings.json
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\BookTrainTickets.exe
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\BookTrainTickets.deps.json
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\BookTrainTickets.runtimeconfig.json
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\BookTrainTickets.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\ref\BookTrainTickets.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\BookTrainTickets.pdb
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Humanizer.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.csproj.AssemblyReference.cache
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.AssemblyInfoInputs.cache
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.AssemblyInfo.cs
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.csproj.CoreCompileInputs.cache
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.csproj.CopyComplete
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\ref\BookTrainTickets.dll
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.pdb
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\obj\Debug\net6.0\BookTrainTickets.genruntimeconfig.cache
+C:\Users\crist\Desktop\TrainTicketAppGit\TrainTicketAppNew\BookTrainTickets\bin\Debug\net6.0\FluentAssertions.dll
