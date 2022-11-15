@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Desktop",
+    "\\Desktop\\UpdatedNewTrainTicketApp",
+    "\\Desktop\\UpdatedNewTrainTicketApp\\TrainTicketsAppWebAPI"
   ],
-  "SelectedNode": "\\BookTrainTicketsApp.sln",
+  "SelectedNode": "\\Desktop\\UpdatedNewTrainTicketApp\\BookTrainTicketsApp.sln",
   "PreviewInSolutionExplorer": false
 }
