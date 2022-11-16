@@ -14,12 +14,18 @@ const TrainPage = () => {
     const [openLogin, setOpenLogin] = useState(false);
     const [openDisplayBookings, setOpenDisplayBookings] = useState(false);
     const [routeId, setRouteId] = useState([])
-
+    const [optionsState, setOptionsState] = useState([])
     const [selectedTrain, setSelectedTrain] = useState({})
     const [firstName, setFirstName] = useState('')
     const [lastName, setLastName] = useState('')
-
     const [bookings, setBookings] = useState([])
+
+    var TrainUrl = new URL('https://localhost:7007/api/route/getTrainsByStationsName');
+    var RouteIdUrl = new URL('https://localhost:7007/api/route/getRouteIdByStationsName');
+    var PostClientUrl = new URL('https://localhost:7007/api/client/Register');
+    var ReturnClientUrl = new URL('https://localhost:7007/api/client/SignIn');
+    var PostBookingUrl = new URL("https://localhost:7007/api/booking/postBooking")
+    var DisplayBookingsUrl = new URL('https://localhost:7007/api/booking/displayBookingsByClientId');
 
 
     const handleSubmit = async (event) => {
@@ -30,7 +36,7 @@ const TrainPage = () => {
             "DepartureStation": departureStation,
             "ArrivalStation": arrivalStation
         };
-        const responseTrains = await fetch('https://localhost:7007/api/route/getTrainsByStationsName', {
+        const responseTrains = await fetch(TrainUrl, {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
@@ -38,8 +44,9 @@ const TrainPage = () => {
             }
         }).then(responseTrains => responseTrains.json())
             .then((responseTrainsData) => setTrains(responseTrainsData));
+
         setIsLoading(false);
-        const responseRoute = await fetch('https://localhost:7007/api/route/getRouteIdByStationsName', {
+        const responseRoute = await fetch(RouteIdUrl, {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
@@ -55,7 +62,7 @@ const TrainPage = () => {
             "FirstName": firstName,
             "LastName": lastName
         };
-        fetch('https://localhost:7007/api/client/postClientDto', {
+        fetch(PostClientUrl, {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
@@ -72,7 +79,7 @@ const TrainPage = () => {
             "FirstName": firstName,
             "LastName": lastName
         };
-        fetch('https://localhost:7007/api/client/returnClientIdDto', {
+        fetch(ReturnClientUrl, {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
@@ -103,7 +110,7 @@ const TrainPage = () => {
             "trainId": item.id,
             "routeId": routeId
         };
-        fetch("https://localhost:7007/api/booking/postBooking", {
+        fetch(PostBookingUrl, {
             method: 'POST',
             body: JSON.stringify(body),
             headers: {
@@ -117,25 +124,17 @@ const TrainPage = () => {
 
     }
 
-    const handleDisplaybookings = () => {
+    const handleDisplaybookings = async () => {
 
-
-        const body = {
-            token
-        };
-        const responseBookings = fetch('https://localhost:7007/api/booking/DisplayBookingsByClientId', {
+        const responseBookings = await fetch(DisplayBookingsUrl, {
             method: 'POST',
-            body: JSON.stringify(body),
+            body: JSON.stringify(token),
             headers: {
                 "content-type": "application/json"
             }
         }).then(responseBookings => responseBookings.json())
             .then((responseBookingsData) => setBookings(responseBookingsData));
-        setOpenDisplayBookings(false)
-
-
-
-
+        setOpenDisplayBookings(true);
     }
 
 
@@ -143,17 +142,32 @@ const TrainPage = () => {
 
 
     return (
-        <>
+        <><>
+
             <div class="container">
+                alert("Javascript loaded");
                 <button onClick={() => setOpenLogin(true)}>SignIn</button>
-                <button onClick={() => setOpenRegister(true)} >Register</button>
-                <button onClick={() => setOpenDisplayBookings(true)} >Display Your Bookings</button>
+                <button onClick={() => setOpenRegister(true)}>Register</button>
+                <button onClick={() => handleDisplaybookings()}>Display Your Bookings</button>
                 <div class="routes_sidebar">
-                    <form >
+                    <form>
+                        <select value={optionsState}>
+                            <option value="Bucuresti">Bucuresti</option>
+                            <option value="Craiova">Craiova</option>
+                            <option value="Brasov">Brasov</option>
+                        </select>
+                        <select value={optionsState}>
+                            <option value="Bucuresti">Bucuresti</option>
+                            <option value="Craiova">Craiova</option>
+                            <option value="Constanta">Constanta</option>
+                        </select>
+
                         <input onChange={(e) => setDepartureStation(e.target.value)} type="text" id="departureStation" placeholder="Departure Station" />
                         <input onChange={(e) => setArrivalStation(e.target.value)} type="text" id="arrivalStation" placeholder="Arrival Station" />
+
                         <button onClick={handleSubmit} type="submit" id="btnSearch">Search</button>
                     </form>
+
                 </div>
                 <div class="routes_container">
                 </div>
@@ -164,9 +178,7 @@ const TrainPage = () => {
                     <span class="sr-only">Loading...</span>
                 </div> : null}
 
-            </div>
-            <h1>Trains for Specified Route</h1>
-            <Dialog
+            </div><h1>Trains for Specified Route</h1><Dialog
                 open={openRegister}
                 keepMounted
                 aria-describedby="alert-dialog-slide-description"
@@ -183,8 +195,7 @@ const TrainPage = () => {
                     <Button onClick={handleClose}>Close</Button>
                     <Button onClick={() => handleSubmitRegister()}>Register</Button>
                 </DialogActions>
-            </Dialog>
-            <Dialog
+            </Dialog><Dialog
                 open={openLogin}
                 keepMounted
                 aria-describedby="alert-dialog-slide-description"
@@ -201,8 +212,7 @@ const TrainPage = () => {
                     <Button onClick={handleClose}>Close</Button>
                     <Button onClick={() => handleSubmitLogin()}>Login</Button>
                 </DialogActions>
-            </Dialog>
-            <Dialog
+            </Dialog><Dialog
                 open={openDisplayBookings}
                 keepMounted
                 aria-describedby="alert-dialog-slide-description"
@@ -223,11 +233,7 @@ const TrainPage = () => {
                     </table>
                 </DialogContent>
                 <Button onClick={handleClose}>Close</Button>
-            </Dialog>
-
-
-
-            <table id="trains">
+            </Dialog><table id="trains">
                 <tr>
 
                     <th>Train Number</th>
@@ -240,12 +246,10 @@ const TrainPage = () => {
                     <td><button onClick={() => handleSelect(item)}>Select</button></td>
 
                 </tr>) : null}
-            </table>
-
-            <dialog class="modal" id="modal">
+            </table><dialog class="modal" id="modal">
 
 
-            </dialog>
+            </dialog></>
         </>
     );
 }; export default TrainPage

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l7SxB4txmx6NXLBszEbRXxFs4pHKc4edf7BZW27UixY=",
+  "Hash": "J3iYsBsyK6iw2teYwOg5246okBH4YrHkKBp5pUei6aM=",
   "Source": "TrainTicketsAppWebAPI",
   "BasePath": "_content/TrainTicketsAppWebAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TrainTicketsAppWebAPI\\wwwroot",
       "Source": "TrainTicketsAppWebAPI",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\.gitignore",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\.gitignore",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/.gitignore",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\.gitignore"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\package.json",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\package.json",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/package.json",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\package.json"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\package-lock.json",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\package-lock.json",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/package-lock.json",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\package-lock.json"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\favicon.ico",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\favicon.ico",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/public/favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\public\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\index.html",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\index.html",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/public/index.html",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\public\\index.html"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\logo192.png",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\logo192.png",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/public/logo192.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\public\\logo192.png"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\logo512.png",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\logo512.png",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/public/logo512.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\public\\logo512.png"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\manifest.json",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\manifest.json",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/public/manifest.json",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\public\\manifest.json"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\robots.txt",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\public\\robots.txt",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/public/robots.txt",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\public\\robots.txt"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\README.md",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\README.md",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/README.md",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\README.md"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\App.test.js",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\App.test.js",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/src/App.test.js",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\src\\App.test.js"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\components\\TrainPage\\index.js",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\components\\TrainPage\\index.js",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/src/components/TrainPage/index.js",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\src\\components\\TrainPage\\index.js"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\components\\TrainPage\\styles.css",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\components\\TrainPage\\styles.css",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/src/components/TrainPage/styles.css",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\src\\components\\TrainPage\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\index.css",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\index.css",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/src/index.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\src\\index.css"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\index.js",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\index.js",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/src/index.js",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\src\\index.js"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\logo.svg",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\logo.svg",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/src/logo.svg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\src\\logo.svg"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\reportWebVitals.js",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\reportWebVitals.js",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/src/reportWebVitals.js",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\React\\ReactApp\\src\\reportWebVitals.js"
     },
     {
-      "Identity": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\setupTests.js",
+      "Identity": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\React\\ReactApp\\src\\setupTests.js",
       "SourceId": "TrainTicketsAppWebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\TrainTicketsAppWebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\wwwroot\\",
       "BasePath": "_content/TrainTicketsAppWebAPI",
       "RelativePath": "React/ReactApp/src/setupTests.js",
       "AssetKind": "All",

@@ -29,8 +29,8 @@ namespace TrainTicketsAppWebAPI.Controllers
        
 
         [HttpPost]
-        [Route("postClientDto")]
-        public async Task<ActionResult<List<Client>>> PostClientDto([FromBody] ClientDto newClient)
+        [Route("Register")]
+        public async Task<ActionResult<List<Client>>> Register([FromBody] ClientDto newClient)
         {
             var client=_mapper.Map<Client>(newClient);
             _clientManager.Clients.PostClientIfNotExist(client);
@@ -41,9 +41,9 @@ namespace TrainTicketsAppWebAPI.Controllers
         
 
         [HttpPost]
-        [Route("returnClientIdDto")]
+        [Route("SignIn")]
 
-        public async Task<ActionResult<string>> ReturnClientIdDto([FromBody] ClientDto newClient)
+        public async Task<ActionResult<string>> SingIn([FromBody] ClientDto newClient)
         {
             var client = _mapper.Map<Client>(newClient);
             Guid id = Guid.NewGuid();
