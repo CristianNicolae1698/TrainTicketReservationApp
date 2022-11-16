@@ -1,29 +1,36 @@
 ﻿using DomainLibrary.Interfaces;
-using EFDataAccessLibrary.Repositories;
-using EFDataAccessLibrary;
+using DomainLibrary.Entities;
 
 namespace TrainTicketsAppWebAPI.Managers
 {
     public class BookingManager : IBookingManager
     {
-        private readonly BookingContext _context;
-        public BookingManager(BookingContext context)
+        private readonly IBookingRepository _bookingRepository;
+        public BookingManager(IBookingRepository bookingRepository)
         {
-            _context = context;
-            Bookings = new BookingRepository (_context);
-
+            _bookingRepository = bookingRepository;
         }
 
         public IBookingRepository Bookings { get; set; }
 
+        public bool CreateBooking(Guid clientId, Guid trainId, Guid routeId)
+        {
+            try
+            {
+                _bookingRepository.PostBooking(clientId, trainId, routeId);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
 
-        public int Complete()
-        {
-            return _context.SaveChanges();
         }
-        public void Dispose()
+
+        public IEnumerable<Booking> DisplayBookings(Guid clientId)
         {
-            _context.Dispose();
+            return _bookingRepository.DisplayBookingsByClientId(clientId);
         }
+        
     }
 }

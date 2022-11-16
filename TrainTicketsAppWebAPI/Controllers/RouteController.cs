@@ -2,7 +2,6 @@
 using DomainLibrary.Entities;
 using Microsoft.AspNetCore.Mvc;
 using TrainTicketsAppWebAPI.DTOs;
-using TrainTicketsAppWebAPI.Helpers;
 using TrainTicketsAppWebAPI.Managers;
 using Route = DomainLibrary.Entities.Route;
 
@@ -26,22 +25,20 @@ namespace TrainTicketsAppWebAPI.Controllers
 
         
         [HttpPost]
-        [Route("getTrainsByStationsName")]
-        public async Task<ActionResult> GetTrainsByStationsName([FromBody] RouteHelper route)
+        [Route("getTrainsByStations")]
+        public async Task<ActionResult> GetTrainsByStations([FromBody] RouteStationDto route)
         {
 
-            List<Train> trainList = new List<Train>();
-            trainList = _routeManager.Routes.GetTrainsByStationsName(route.DepartureStation, route.ArrivalStation).ToList();
-            return Ok(trainList);
+            
+            return Ok(_routeManager.GetTrainsByRoute);
         }
 
         [HttpPost]
-        [Route("getRouteIdByStationsName")]
+        [Route("getRouteIdByStations")]
 
-        public async Task<ActionResult> GetRouteIdByStationsName([FromBody] RouteHelper route)
+        public async Task<ActionResult> GetRouteIdByStations([FromBody] RouteStationDto route)
         {
-            Guid id= Guid.NewGuid();
-            id = _routeManager.Routes.GetRouteIdByStationsName(route.DepartureStation, route.ArrivalStation);
+            var id = _routeManager.Routes.GetRouteIdByStationsName(route.DepartureStation, route.ArrivalStation);
             return Ok(id);
         }
 

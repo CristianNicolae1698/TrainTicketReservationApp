@@ -20,12 +20,12 @@ const TrainPage = () => {
     const [lastName, setLastName] = useState('')
     const [bookings, setBookings] = useState([])
 
-    var TrainUrl = new URL('https://localhost:7007/api/route/getTrainsByStationsName');
-    var RouteIdUrl = new URL('https://localhost:7007/api/route/getRouteIdByStationsName');
+    var TrainUrl = new URL('https://localhost:7007/api/route/getTrainsByStations');
+    var RouteIdUrl = new URL('https://localhost:7007/api/route/getRouteIdByStations');
     var PostClientUrl = new URL('https://localhost:7007/api/client/Register');
     var ReturnClientUrl = new URL('https://localhost:7007/api/client/SignIn');
     var PostBookingUrl = new URL("https://localhost:7007/api/booking/postBooking")
-    var DisplayBookingsUrl = new URL('https://localhost:7007/api/booking/displayBookingsByClientId');
+    var DisplayBookingsUrl = new URL('https://localhost:7007/api/booking/displayBookings');
 
 
     const handleSubmit = async (event) => {

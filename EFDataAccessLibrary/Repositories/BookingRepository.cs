@@ -2,11 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 
 using DomainLibrary.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EFDataAccessLibrary.Repositories
 {
@@ -18,7 +13,7 @@ namespace EFDataAccessLibrary.Repositories
         }
 
 
-        public Booking PostBooking(Guid clientId, Guid trainId, Guid routeId)
+        public void PostBooking(Guid clientId, Guid trainId, Guid routeId)
         {
             var booking = new Booking();
             
@@ -28,8 +23,8 @@ namespace EFDataAccessLibrary.Repositories
             Random rd = new Random();
             booking.Price = rd.Next(100, 200);
             booking.BookingDate = DateTime.UtcNow;
-            
-            return booking;
+
+            _context.Bookings.Add(booking);
 
         }
         
@@ -40,7 +35,9 @@ namespace EFDataAccessLibrary.Repositories
             
         }
 
-        
-
+        Booking IBookingRepository.PostBooking(Guid clientId, Guid trainId, Guid routeId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

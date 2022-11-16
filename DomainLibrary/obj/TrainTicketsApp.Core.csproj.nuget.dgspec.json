@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\crist\\Desktop\\UpdatedNewTrainTicketApp\\DomainLibrary\\TrainTicketsApp.Core.csproj": {}
+    "C:\\Users\\crist\\Desktop\\TrainAppRepository\\TrainTicketReservationApp\\DomainLibrary\\TrainTicketsApp.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\crist\\Desktop\\UpdatedNewTrainTicketApp\\DomainLibrary\\TrainTicketsApp.Core.csproj": {
+    "C:\\Users\\crist\\Desktop\\TrainAppRepository\\TrainTicketReservationApp\\DomainLibrary\\TrainTicketsApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\crist\\Desktop\\UpdatedNewTrainTicketApp\\DomainLibrary\\TrainTicketsApp.Core.csproj",
+        "projectUniqueName": "C:\\Users\\crist\\Desktop\\TrainAppRepository\\TrainTicketReservationApp\\DomainLibrary\\TrainTicketsApp.Core.csproj",
         "projectName": "TrainTicketsApp.Core",
-        "projectPath": "C:\\Users\\crist\\Desktop\\UpdatedNewTrainTicketApp\\DomainLibrary\\TrainTicketsApp.Core.csproj",
+        "projectPath": "C:\\Users\\crist\\Desktop\\TrainAppRepository\\TrainTicketReservationApp\\DomainLibrary\\TrainTicketsApp.Core.csproj",
         "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\crist\\Desktop\\UpdatedNewTrainTicketApp\\DomainLibrary\\obj\\",
+        "outputPath": "C:\\Users\\crist\\Desktop\\TrainAppRepository\\TrainTicketReservationApp\\DomainLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

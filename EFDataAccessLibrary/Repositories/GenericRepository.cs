@@ -1,12 +1,4 @@
-﻿
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
-using DomainLibrary.Interfaces;
+﻿using DomainLibrary.Interfaces;
 using System.Linq.Expressions;
 using DomainLibrary.Entities;
 

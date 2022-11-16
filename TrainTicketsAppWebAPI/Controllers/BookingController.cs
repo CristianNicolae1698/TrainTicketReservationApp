@@ -4,7 +4,6 @@ using DomainLibrary.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using TrainTicketsAppWebAPI.DTOs;
-using TrainTicketsAppWebAPI.Helpers;
 using TrainTicketsAppWebAPI.Managers;
 
 namespace TrainTicketsAppWebAPI.Controllers
@@ -27,27 +26,24 @@ namespace TrainTicketsAppWebAPI.Controllers
 
         [HttpPost]
         [Route("postBooking")]
-        public async Task<ActionResult<List<Booking>>> PostBooking([FromBody] ClientTrainRouteHelper model)
+        public async Task<ActionResult<List<Booking>>> PostBooking([FromBody] ClientTrainRouteDto model)
         {
-            var booking = _bookingManager.Bookings.PostBooking(model.clientId, model.trainId, model.routeId);
-            
-            _bookingManager.Bookings.Add(booking);
-            _bookingManager.Complete();
-            return Ok();
+
+            return Ok(_bookingManager.CreateBooking(model.clientId, model.trainId, model.routeId)); 
         }
 
 
 
         
         [HttpPost]
-        [Route("displayBookingsByClientId")]
+        [Route("displayBookings")]
 
-        public async Task<ActionResult<List<Booking>>> DisplayBookingsByClientId([FromBody] Guid clientId)
+        public async Task<ActionResult<List<Booking>>> DisplayBookings([FromBody] Guid clientId)
         {
             List<BookingDto> bookingsListDto=new List<BookingDto>();
             List<Booking> bookingsList = new List<Booking>();
             bookingsList = _mapper.Map<List<BookingDto>, List<Booking>>(bookingsListDto);
-            bookingsList = _bookingManager.Bookings.DisplayBookingsByClientId(clientId).ToList();
+            bookingsList = _bookingManager.DisplayBookings(clientId).ToList();
             return Ok(bookingsList);
         }
 

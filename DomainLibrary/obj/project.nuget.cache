@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hg94KIhWhd6JnTE62iOePH8wfakUUuYcyjpgCpKo3gvYEX+01aaaxsBuXycHRfpEKJPnnZNVzu8p3tkwhWTjdA==",
+  "dgSpecHash": "gmxu9WKMx8C6YtyZDkkc5OokTO15lcjrOM1kuiMLYH05FzBtVpoHm54jK/B34binShgFmLS7Lj1tYe9PP7Uleg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crist\\Desktop\\UpdatedNewTrainTicketApp\\DomainLibrary\\TrainTicketsApp.Core.csproj",
+  "projectFilePath": "C:\\Users\\crist\\Desktop\\TrainAppRepository\\TrainTicketReservationApp\\DomainLibrary\\TrainTicketsApp.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

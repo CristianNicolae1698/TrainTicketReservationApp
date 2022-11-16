@@ -33,9 +33,7 @@ namespace TrainTicketsAppWebAPI.Controllers
         public async Task<ActionResult<List<Client>>> Register([FromBody] ClientDto newClient)
         {
             var client=_mapper.Map<Client>(newClient);
-            _clientManager.Clients.PostClientIfNotExist(client);
-            _clientManager.Complete();
-            return Ok();
+            return Ok(_clientManager.CreateClient(client));
         }
 
         
@@ -46,8 +44,7 @@ namespace TrainTicketsAppWebAPI.Controllers
         public async Task<ActionResult<string>> SignIn([FromBody] ClientDto newClient)
         {
             var client = _mapper.Map<Client>(newClient);
-            Guid id = Guid.NewGuid();
-            id = _clientManager.Clients.GetCLientIdByNameDto(client);
+            var id = _clientManager.GetCLientIdByNameDto(client);
             return Ok(id);
         }
 

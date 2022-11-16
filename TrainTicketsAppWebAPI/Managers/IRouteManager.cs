@@ -1,12 +1,16 @@
-﻿using DomainLibrary.Interfaces;
+﻿using DomainLibrary.Entities;
+using DomainLibrary.Interfaces;
 
 namespace TrainTicketsAppWebAPI.Managers
 {
-    public interface IRouteManager : IDisposable
+    public interface IRouteManager 
     {
         IRouteRepository Routes { get; set; }
 
-        int Complete();
-        
+        public IEnumerable<Train> GetTrainsByRoute(string departureStation, string arrivalStation);
+
+        public Guid GetRouteIdByStations(string departureStations, string arrivalStation);
+
+
     }
 }

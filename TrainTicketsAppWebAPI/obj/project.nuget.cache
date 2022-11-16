@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w1kcH8wCRxCWH2U5qUIaRMxBKHjqIVpUJP4yqkeBYWqxpPJNsl79IyLeHNCaWVweMtkMVmRGfxMo7nJ3bwdGLw==",
+  "dgSpecHash": "U08oENQjgWAm3aq+uTdFG5i2Y8GWHCRky4eePwwBb8q53Ae3Pc/pr1f38+8tOgB5z533h9LrAn5kjkwXQG4gfg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crist\\Desktop\\UpdatedNewTrainTicketApp\\TrainTicketsAppWebAPI\\TrainTicketsAppWebAPI.csproj",
+  "projectFilePath": "C:\\Users\\crist\\Desktop\\TrainAppRepository\\TrainTicketReservationApp\\TrainTicketsAppWebAPI\\TrainTicketsAppWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crist\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\crist\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

@@ -1,9 +1,5 @@
 ﻿using DomainLibrary.Interfaces;
 using DomainLibrary.Entities;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System.Linq;
-using System.Runtime.Intrinsics.Arm;
 
 namespace EFDataAccessLibrary.Repositories
 {
