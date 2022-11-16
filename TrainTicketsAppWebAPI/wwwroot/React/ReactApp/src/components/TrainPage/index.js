@@ -143,9 +143,8 @@ const TrainPage = () => {
 
     return (
         <><>
-
+            
             <div class="container">
-                alert("Javascript loaded");
                 <button onClick={() => setOpenLogin(true)}>SignIn</button>
                 <button onClick={() => setOpenRegister(true)}>Register</button>
                 <button onClick={() => handleDisplaybookings()}>Display Your Bookings</button>

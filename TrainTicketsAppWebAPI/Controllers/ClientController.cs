@@ -43,7 +43,7 @@ namespace TrainTicketsAppWebAPI.Controllers
         [HttpPost]
         [Route("SignIn")]
 
-        public async Task<ActionResult<string>> SingIn([FromBody] ClientDto newClient)
+        public async Task<ActionResult<string>> SignIn([FromBody] ClientDto newClient)
         {
             var client = _mapper.Map<Client>(newClient);
             Guid id = Guid.NewGuid();
