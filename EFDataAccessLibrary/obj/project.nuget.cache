@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cVbJLVQLB2+UXy60aqJVamoPJ1LXrclt7+2DZBr8gs+0anBky2YeZeelavKx48uu/aH7zRHGJrmTNgOs+fg6JQ==",
+  "dgSpecHash": "iFJ3Ss8wT/mOjre/cemvpVTZEhmEj+yuK14jt7/PT1y/4FBn0BnqiaQnmT1TJjefwurpiECGYaPbbJanz4+Tpg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\crist\\Desktop\\TrainTicketAppGit\\TrainTicketAppNew\\EFDataAccessLibrary\\TrainTicketsApp.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\crist\\Desktop\\NewVersionTrainTicketApp\\TrainTicketReservationApp\\EFDataAccessLibrary\\TrainTicketsApp.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\crist\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\crist\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
