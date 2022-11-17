@@ -10,7 +10,7 @@ namespace DomainLibrary.Interfaces
     public interface IBookingRepository:IGenericRepository<Booking>
     {
 
-        public Booking PostBooking(Guid clientId, Guid trainId, Guid routeId);
+        public void PostBooking(Guid clientId, Guid trainId, Guid routeId);
 
         public IEnumerable<Booking> DisplayBookingsByClientId(Guid clientId);
 

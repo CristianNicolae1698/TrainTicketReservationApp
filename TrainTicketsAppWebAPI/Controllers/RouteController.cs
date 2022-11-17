@@ -30,7 +30,7 @@ namespace TrainTicketsAppWebAPI.Controllers
         {
 
             
-            return Ok(_routeManager.GetTrainsByRoute);
+            return Ok(_routeManager.GetTrainsByRoute(route.ArrivalStation, route.DepartureStation));
         }
 
         [HttpPost]
@@ -38,8 +38,9 @@ namespace TrainTicketsAppWebAPI.Controllers
 
         public async Task<ActionResult> GetRouteIdByStations([FromBody] RouteStationDto route)
         {
-            var id = _routeManager.Routes.GetRouteIdByStationsName(route.DepartureStation, route.ArrivalStation);
-            return Ok(id);
+            Guid routeId = new Guid();
+            routeId = _routeManager.GetRouteIdByStations(route.DepartureStation, route.ArrivalStation);
+            return Ok(routeId);
         }
 
 

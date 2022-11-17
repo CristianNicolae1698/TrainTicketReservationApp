@@ -16,17 +16,13 @@ namespace TrainTicketsAppWebAPI.Managers
 
         
 
-        public bool CreateClient(Client client)
+        public void CreateClient(Client client)
         {
-            try
-            {
+           
+            
                 _clientRepository.PostClientIfNotExist(client);
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            
+           
         }
 
        
@@ -35,5 +31,8 @@ namespace TrainTicketsAppWebAPI.Managers
         {
             return _clientRepository.GetCLientIdByNameDto(client);
         }
+
+        
+        
     }
 }

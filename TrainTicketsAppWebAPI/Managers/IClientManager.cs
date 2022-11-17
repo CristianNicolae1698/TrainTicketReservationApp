@@ -7,8 +7,9 @@ namespace TrainTicketsAppWebAPI.Managers
     {
         IClientRepository Clients { get; set; }
 
-        bool CreateClient(Client client);
+        void CreateClient(Client client);
 
         Guid GetCLientIdByNameDto(Client client);
+
     }
 }

@@ -33,7 +33,8 @@ namespace TrainTicketsAppWebAPI.Controllers
         public async Task<ActionResult<List<Client>>> Register([FromBody] ClientDto newClient)
         {
             var client=_mapper.Map<Client>(newClient);
-            return Ok(_clientManager.CreateClient(client));
+            _clientManager.CreateClient(client);
+            return Ok();
         }
 
         

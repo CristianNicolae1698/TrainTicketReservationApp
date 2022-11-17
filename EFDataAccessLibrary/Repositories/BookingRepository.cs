@@ -25,6 +25,7 @@ namespace EFDataAccessLibrary.Repositories
             booking.BookingDate = DateTime.UtcNow;
 
             _context.Bookings.Add(booking);
+            _context.SaveChanges();
 
         }
         
@@ -35,9 +36,6 @@ namespace EFDataAccessLibrary.Repositories
             
         }
 
-        Booking IBookingRepository.PostBooking(Guid clientId, Guid trainId, Guid routeId)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

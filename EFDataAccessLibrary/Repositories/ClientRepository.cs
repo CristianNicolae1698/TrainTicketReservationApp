@@ -20,6 +20,7 @@ namespace EFDataAccessLibrary.Repositories
             else
             {
                 _context.Clients.Add(client);
+                _context.SaveChanges();
                 
             }
         } 
