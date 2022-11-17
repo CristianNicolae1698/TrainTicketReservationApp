@@ -3,7 +3,7 @@ using DomainLibrary.Interfaces;
 
 namespace TrainTicketsAppWebAPI.Managers
 {
-    public interface IClientManager :IDisposable
+    public interface IClientManager 
     {
         IClientRepository Clients { get; set; }
 

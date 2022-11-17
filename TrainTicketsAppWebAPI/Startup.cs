@@ -35,6 +35,9 @@ namespace TrainTicketsAppWebAPI
             services.AddTransient<IClientManager, ClientManager>();
             services.AddTransient<IRouteManager, RouteManager>();
             services.AddTransient<ITrainManager, TrainManager>();
+            services.AddTransient<IClientRepository, ClientRepository>();
+            services.AddTransient<IRouteRepository, RouteRepository>();
+            services.AddTransient<IBookingRepository, BookingRepository>();
             services.AddControllersWithViews().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddAutoMapper(typeof(Program).Assembly);
         }

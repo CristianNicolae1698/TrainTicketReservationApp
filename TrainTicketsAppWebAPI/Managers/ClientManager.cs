@@ -14,10 +14,7 @@ namespace TrainTicketsAppWebAPI.Managers
         
         public IClientRepository Clients { get; set; }
 
-        public int Complete()
-        {
-            throw new NotImplementedException();
-        }
+        
 
         public bool CreateClient(Client client)
         {
@@ -32,10 +29,7 @@ namespace TrainTicketsAppWebAPI.Managers
             }
         }
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
+       
 
         public Guid GetCLientIdByNameDto(Client client)
         {
