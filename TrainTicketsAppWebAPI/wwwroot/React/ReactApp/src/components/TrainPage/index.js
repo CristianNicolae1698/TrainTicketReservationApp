@@ -20,6 +20,10 @@ const TrainPage = () => {
     const [lastName, setLastName] = useState('')
     const [bookings, setBookings] = useState([])
 
+    const baseUrl = 'https://localhost:7007/api/';
+    const routePath = 'route';
+    const postPath = 'getTrainsByStations';
+
     var TrainUrl = new URL('https://localhost:7007/api/route/getTrainsByStations');
     var RouteIdUrl = new URL('https://localhost:7007/api/route/getRouteIdByStations');
     var PostClientUrl = new URL('https://localhost:7007/api/client/Register');
@@ -143,24 +147,13 @@ const TrainPage = () => {
 
     return (
         <><>
-            
+
             <div class="container">
                 <button onClick={() => setOpenLogin(true)}>SignIn</button>
                 <button onClick={() => setOpenRegister(true)}>Register</button>
                 <button onClick={() => handleDisplaybookings()}>Display Your Bookings</button>
                 <div class="routes_sidebar">
                     <form>
-                        <select value={optionsState}>
-                            <option value="Bucuresti">Bucuresti</option>
-                            <option value="Craiova">Craiova</option>
-                            <option value="Brasov">Brasov</option>
-                        </select>
-                        <select value={optionsState}>
-                            <option value="Bucuresti">Bucuresti</option>
-                            <option value="Craiova">Craiova</option>
-                            <option value="Constanta">Constanta</option>
-                        </select>
-
                         <input onChange={(e) => setDepartureStation(e.target.value)} type="text" id="departureStation" placeholder="Departure Station" />
                         <input onChange={(e) => setArrivalStation(e.target.value)} type="text" id="arrivalStation" placeholder="Arrival Station" />
 
